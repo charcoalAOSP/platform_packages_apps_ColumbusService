@@ -28,18 +28,13 @@
     <string name="screen_key_launch_settings_page" translatable="false">launch_settings_page</string>
     <string name="screen_key_launch_app_shortcut_settings_page" translatable="false">launch_app_shortcut_settings_page</string>
 
-    <!-- Other non-translatable -->
-    <string name="summary_placeholder" translatable="false">&#160;</string>
-
     <!-- Entry points in Settings -->
     <string name="settings_entry_title">Quick Tap to start actions</string>
     <string name="settings_entry_summary_on">On / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
     <string name="settings_entry_summary_off">Off</string>
-    <string name="settings_search_keywords">Quick Tap, back tap, tap, gesture, assist, assistant</string>
 
     <!-- Items in Quick Tap gesture settings -->
     <string name="setting_enabled_title">Use Quick Tap</string>
-    <string name="setting_footer_content">To perform an action, tap back of your phone twice near the middle</string>
     <string name="setting_sensitivity_category_title">Quick Tap strength</string>
     <string name="setting_low_sensitivity_title">Require stronger taps</string>
     <string name="setting_action_title" product="default">Tap back of phone twice to</string>
@@ -49,9 +44,7 @@
     <string name="setting_app_selection_help_text" product="default">Select an app to open when you tap the back of your phone twice. If you uninstall the app, Quick Tap turns off until you select a different app.</string>
     <string name="setting_app_selection_help_text" product="device">Select an app to open when you tap the back of your device twice. If you uninstall the app, Quick Tap turns off until you select a different app.</string>
     <string name="setting_app_selection_help_text" product="tablet">Select an app to open when you tap the back of your tablet twice. If you uninstall the app, Quick Tap turns off until you select a different app.</string>
-    <string name="setting_app_selection_help_text_disabled">To use this feature, you have to enable the Quick Tap first.</string>
-    <string name="setting_app_shortcut_selection_help_text">Select what happens when you use Quick Tap. You can change this later in settings.</string>
-    <string name="setting_app_shortcut_selection_help_text_disabled">@string/setting_app_selection_help_text_disabled</string>
+    <string name="setting_app_shortcut_selection_help_text">Select what happens when you open this app using Quick Tap.</string>
     <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> settings</string>
     <string name="setting_action_launch_summary_no_selection">No app selected</string>
     <string name="setting_action_launch_summary_not_installed">App not installed</string>

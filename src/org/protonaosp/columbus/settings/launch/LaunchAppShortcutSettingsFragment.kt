@@ -19,7 +19,6 @@ import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.PreferenceCategory
 import com.android.settingslib.widget.SelectorWithWidgetPreference
-import com.android.settingslib.widget.TopIntroPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -52,14 +51,6 @@ class LaunchAppShortcutSettingsFragment :
 
     // Keys
     private val keyEnabled by lazy { _context.getString(R.string.pref_key_enabled) }
-    private val keyLaunchShortcutAppSummary by lazy {
-        _context.getString(R.string.pref_key_launch_shortcut_app_summary)
-    }
-
-    // Prefs
-    private val prefLaunchShortcutAppSummary by lazy {
-        findPreference<TopIntroPreference>(keyLaunchShortcutAppSummary)
-    }
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.launch_app_shortcut_settings, rootKey)
@@ -92,7 +83,6 @@ class LaunchAppShortcutSettingsFragment :
                 _context.getString(R.string.pref_key_launch_app_shortcut),
                 ShortcutInfo::class.java,
             )
-        updateIntro()
         lifecycleScope.launch { populateRadioPreferences() }
         PackageStateManager.registerListener(this)
     }
@@ -110,7 +100,6 @@ class LaunchAppShortcutSettingsFragment :
 
     override fun onSharedPreferenceChanged(prefs: SharedPreferences, key: String?) {
         if (key == keyEnabled) {
-            updateIntro()
             updateState()
         }
     }
@@ -155,16 +144,6 @@ class LaunchAppShortcutSettingsFragment :
         }
 
         updateState()
-    }
-
-    private fun updateIntro() {
-        prefLaunchShortcutAppSummary?.setTitle(
-            if (prefs?.getEnabled(_context) == true) {
-                R.string.setting_app_shortcut_selection_help_text
-            } else {
-                R.string.setting_app_shortcut_selection_help_text_disabled
-            }
-        )
     }
 
     private fun updateState() {

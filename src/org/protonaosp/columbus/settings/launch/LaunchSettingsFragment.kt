@@ -19,7 +19,6 @@ import android.view.View
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.PreferenceCategory
 import com.android.settingslib.widget.SelectorWithWidgetPreference
-import com.android.settingslib.widget.TopIntroPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -55,14 +54,6 @@ class LaunchSettingsFragment :
 
     // Keys
     private val keyEnabled by lazy { _context.getString(R.string.pref_key_enabled) }
-    private val keyLaunchAppSummary by lazy {
-        _context.getString(R.string.pref_key_launch_app_summary)
-    }
-
-    // Prefs
-    private val prefLaunchAppSummary by lazy {
-        findPreference<TopIntroPreference>(keyLaunchAppSummary)
-    }
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.launch_settings, rootKey)
@@ -85,7 +76,6 @@ class LaunchSettingsFragment :
             preferenceScreen.findPreference<PreferenceCategory>(
                 getString(R.string.categ_key_app_list)
             )
-        updateIntro()
         lifecycleScope.launch { populateRadioPreferences() }
         PackageStateManager.registerListener(this)
     }
@@ -103,7 +93,6 @@ class LaunchSettingsFragment :
 
     override fun onSharedPreferenceChanged(prefs: SharedPreferences, key: String?) {
         if (key == keyEnabled) {
-            updateIntro()
             updateState()
         }
     }
@@ -160,16 +149,6 @@ class LaunchSettingsFragment :
             dlog(TAG, "Failed to query shortcuts. ${e}")
             arrayListOf<ShortcutInfo?>()
         }
-    }
-
-    private fun updateIntro() {
-        prefLaunchAppSummary?.setTitle(
-            if (prefs?.getEnabled(_context) == true) {
-                R.string.setting_app_selection_help_text
-            } else {
-                R.string.setting_app_selection_help_text_disabled
-            }
-        )
     }
 
     private fun updateState() {
