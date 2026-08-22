@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Brzi dodir za pokretanje radnji</string>
+    <string name="settings_entry_summary_on">Uključeno / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Isključeno</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Koristi brzi dodir</string>
+    <string name="setting_sensitivity_category_title">Jačina brzog dodira</string>
+    <string name="setting_low_sensitivity_title">Zahtijevaj jače dodire</string>
+    <string name="launch_settings_activity_title">Postavke brzog dodira</string>
+    <string name="setting_action_title" product="default">Dvaput dodirnite stražnju stranu telefona za</string>
+    <string name="setting_app_selection_help_text" product="default">Odaberite aplikaciju koja će se otvoriti kad dvaput dodirnete stražnju stranu telefona. Ako deinstalirate tu aplikaciju, brzi se dodir isključuje dok ne odaberete drugu aplikaciju.</string>
+    <string name="setting_app_shortcut_selection_help_text">Odaberite što će se dogoditi kad tu aplikaciju otvorite pomoću brzog dodira.</string>
+    <string name="radio_button_extra_widget_a11y_label">Postavke radnje <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Nije odabrana nijedna aplikacija</string>
+    <string name="setting_action_launch_summary_not_installed">Aplikacija nije instalirana</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Snimanje zaslona</string>
+    <string name="action_assistant_name">Pristup digitalnom asistentu</string>
+    <string name="action_media_name">Reproduciranje ili pauziranje medija</string>
+    <string name="action_overview_name">Prikaz nedavnih aplikacija</string>
+    <string name="action_notifications_name">Prikaz obavijesti</string>
+    <string name="action_flashlight_name">Uključivanje/isključivanje svjetiljke</string>
+    <string name="action_launch_name">Otvaranje aplikacije</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Otkriven je brzi dodir!</string>
+</resources>

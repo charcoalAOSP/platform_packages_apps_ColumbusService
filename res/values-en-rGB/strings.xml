@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Quick Tap to start actions</string>
+    <string name="settings_entry_summary_on">On / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Off</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Use Quick Tap</string>
+    <string name="setting_sensitivity_category_title">Quick Tap strength</string>
+    <string name="setting_low_sensitivity_title">Require stronger taps</string>
+    <string name="launch_settings_activity_title">Quick Tap settings</string>
+    <string name="setting_action_title" product="default">Tap back of phone twice to</string>
+    <string name="setting_app_selection_help_text" product="default">Select an app to open when you tap the back of your phone twice. If you uninstall the app, Quick Tap turns off until you select a different app.</string>
+    <string name="setting_app_shortcut_selection_help_text">Select what happens when you open this app using Quick Tap.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> settings</string>
+    <string name="setting_action_launch_summary_no_selection">No app selected</string>
+    <string name="setting_action_launch_summary_not_installed">App not installed</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Take screenshot</string>
+    <string name="action_assistant_name">Access your digital assistant</string>
+    <string name="action_media_name">Play or pause media</string>
+    <string name="action_overview_name">See recent apps</string>
+    <string name="action_notifications_name">Show notifications</string>
+    <string name="action_flashlight_name">Toggle torch</string>
+    <string name="action_launch_name">Open app</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Quick Tap detected!</string>
+</resources>

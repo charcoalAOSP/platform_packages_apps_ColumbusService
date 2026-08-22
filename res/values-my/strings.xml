@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">လုပ်ဆောင်ရန် ‘အမြန်တို့ခြင်း’</string>
+    <string name="settings_entry_summary_on">ဖွင့် / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">ပိတ်</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">‘အမြန်တို့’ သုံးရန်</string>
+    <string name="setting_sensitivity_category_title">‘အမြန်တို့’ ၏ တို့အား</string>
+    <string name="setting_low_sensitivity_title">ခပ်ပြင်းပြင်းတို့ချက်များ လိုအပ်သည်</string>
+    <string name="launch_settings_activity_title">‘အမြန်တို့’ ဆက်တင်များ</string>
+    <string name="setting_action_title" product="default">ဖုန်း၏နောက်ဘက်ကို နှစ်ကြိမ်တို့ခြင်းဖြင့်</string>
+    <string name="setting_app_selection_help_text" product="default">သင့်ဖုန်း၏နောက်ဘက်ကို နှစ်ချက်တို့လျှင် ဖွင့်မည့်အက်ပ်ကို ရွေးပါ။ အက်ပ်ကို ဖယ်ရှားလိုက်ပါက သင် အခြားအက်ပ်ကို မရွေးမချင်း ‘အမြန်တို့’ ကို ပိတ်ထားသည်။</string>
+    <string name="setting_app_shortcut_selection_help_text">‘အမြန်တို့’ ကို သုံး၍ ဤအက်ပ်ကိုဖွင့်သောအခါ မည်သို့ဖြစ်မည်ကို ရွေးပါ။</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> ဆက်တင်များ</string>
+    <string name="setting_action_launch_summary_no_selection">အက်ပ် ရွေးမထားပါ</string>
+    <string name="setting_action_launch_summary_not_installed">အက်ပ် ထည့်သွင်းမထားပါ</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">ဖန်သားပြင်ပုံ ရိုက်ရန်</string>
+    <string name="action_assistant_name">သင့် ဒစ်ဂျစ်တယ်အထောက်အကူကို သုံးရန်</string>
+    <string name="action_media_name">မီဒီယာဖွင့်ရန် (သို့) ခဏရပ်ရန်</string>
+    <string name="action_overview_name">မကြာသေးမီကအက်ပ်များကို ကြည့်ရန်</string>
+    <string name="action_notifications_name">အကြောင်းကြားချက်များ ပြရန်</string>
+    <string name="action_flashlight_name">ဖလက်ရှ်မီး ဖွင့်/ပိတ်ရန်</string>
+    <string name="action_launch_name">အက်ပ်ဖွင့်ရန်</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">‘အမြန်တို့’ ကို တွေ့ရသည်။</string>
+</resources>

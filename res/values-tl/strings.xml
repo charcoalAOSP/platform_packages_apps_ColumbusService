@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Mag-Quick Tap para magsimula ng mga aksyon</string>
+    <string name="settings_entry_summary_on">Naka-on / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">I-off</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Gamitin ang Quick Tap</string>
+    <string name="setting_sensitivity_category_title">Lakas ng Quick Tap</string>
+    <string name="setting_low_sensitivity_title">Kailanganin ang mas malalakas na pag-tap</string>
+    <string name="launch_settings_activity_title">Mga setting ng Quick Tap</string>
+    <string name="setting_action_title" product="default">I-tap nang dalawang beses ang likod ng telepono para</string>
+    <string name="setting_app_selection_help_text" product="default">Pumili ng app na bubuksan kapag na-tap mo nang dalawang beses ang likod ng iyong telepono. Kung ia-uninstall mo ang app, mao-off ang Quick Tap hanggang pumili ka ng ibang app.</string>
+    <string name="setting_app_shortcut_selection_help_text">Piliin kung ano ang mangyayari kapag binuksan mo ang app na ito gamit ang Quick Tap.</string>
+    <string name="radio_button_extra_widget_a11y_label">Mga setting ng <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Walang piniling app</string>
+    <string name="setting_action_launch_summary_not_installed">Hindi naka-install ang app</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Kumuha ng screenshot</string>
+    <string name="action_assistant_name">I-access ang iyong digital na assistant</string>
+    <string name="action_media_name">Mag-play o mag-pause ng media</string>
+    <string name="action_overview_name">Tingnan ang mga kamakailang app</string>
+    <string name="action_notifications_name">Magpakita ng mga notification</string>
+    <string name="action_flashlight_name">I-toggle ang flashlight</string>
+    <string name="action_launch_name">Buksan ang app</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">May na-detect na Quick Tap!</string>
+</resources>

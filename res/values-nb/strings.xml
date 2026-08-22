@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Hurtigtrykk for å starte handlinger</string>
+    <string name="settings_entry_summary_on">På / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Av</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Bruk hurtigtrykk</string>
+    <string name="setting_sensitivity_category_title">Hurtigtrykkstyrke</string>
+    <string name="setting_low_sensitivity_title">Krev hardere trykk</string>
+    <string name="launch_settings_activity_title">Innstillinger for hurtigtrykk</string>
+    <string name="setting_action_title" product="default">Trykk to ganger bak på telefonen for å gjøre dette</string>
+    <string name="setting_app_selection_help_text" product="default">Velg en app du vil åpne når du trykker to ganger på baksiden av telefonen. Hvis du avinstallerer appen, slås hurtigtrykk av til du velger en annen app.</string>
+    <string name="setting_app_shortcut_selection_help_text">Velg hva som skjer når du åpner denne appen med hurtigtrykk.</string>
+    <string name="radio_button_extra_widget_a11y_label">Innstillinger for <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Ingen app er valgt</string>
+    <string name="setting_action_launch_summary_not_installed">Appen er ikke installert</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Ta skjermbilde</string>
+    <string name="action_assistant_name">Åpne den digitale assistenten</string>
+    <string name="action_media_name">Spill av eller sett medier på pause</string>
+    <string name="action_overview_name">Se nylige apper</string>
+    <string name="action_notifications_name">Vis varsler</string>
+    <string name="action_flashlight_name">Slå lommelykten på/av</string>
+    <string name="action_launch_name">Åpne app</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Hurtigtrykk er registrert</string>
+</resources>

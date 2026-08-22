@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">ಕ್ರಿಯೆಗಳನ್ನು ಪ್ರಾರಂಭಿಸಲು ಕ್ವಿಕ್ ಟ್ಯಾಪ್ ಬಳಸಿ</string>
+    <string name="settings_entry_summary_on">ಆನ್ / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">ಆಫ್</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">ಕ್ವಿಕ್ ಟ್ಯಾಪ್ ಅನ್ನು ಬಳಸಿ</string>
+    <string name="setting_sensitivity_category_title">ಕ್ವಿಕ್ ಟ್ಯಾಪ್‌ನ ಸಾಮರ್ಥ್ಯ</string>
+    <string name="setting_low_sensitivity_title">ಬಲವಾಗಿ ಟ್ಯಾಪ್ ಮಾಡುವ ಅಗತ್ಯವಿದೆ</string>
+    <string name="launch_settings_activity_title">ಕ್ವಿಕ್ ಟ್ಯಾಪ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="setting_action_title" product="default">ಇದಕ್ಕಾಗಿ ಫೋನ್‌ನ ಹಿಂಭಾಗವನ್ನು ಎರಡು ಬಾರಿ ಟ್ಯಾಪ್ ಮಾಡಿ</string>
+    <string name="setting_app_selection_help_text" product="default">ನಿಮ್ಮ ಫೋನ್‌ನ ಹಿಂಭಾಗವನ್ನು ಎರಡು ಬಾರಿ ಟ್ಯಾಪ್ ಮಾಡಿದಾಗ ತೆರೆಯಲು ಆ್ಯಪ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ. ನೀವು ಆ್ಯಪ್ ಅನ್ನು ಅನ್‌ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿದರೆ, ನೀವು ಬೇರೆ ಆ್ಯಪ್ ಆಯ್ಕೆಮಾಡುವವರೆಗೆ ಕ್ವಿಕ್ ಟ್ಯಾಪ್ ಆಫ್ ಆಗುತ್ತದೆ.</string>
+    <string name="setting_app_shortcut_selection_help_text">ನೀವು ಕ್ವಿಕ್ ಟ್ಯಾಪ್ ಬಳಸಿ ಈ ಆ್ಯಪ್ ತೆರೆದಾಗ ಏನಾಗಬೇಕು ಎಂಬುದನ್ನು ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="setting_action_launch_summary_no_selection">ಯಾವುದೇ ಆ್ಯಪ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಲಾಗಿಲ್ಲ</string>
+    <string name="setting_action_launch_summary_not_installed">ಆ್ಯಪ್‌ ಇನ್‌ಸ್ಟಾಲ್‌ ಮಾಡಲಾಗಿಲ್ಲ</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ತೆಗೆದುಕೊಳ್ಳಿ</string>
+    <string name="action_assistant_name">ನಿಮ್ಮ ಡಿಜಿಟಲ್ ಅಸಿಸ್ಟೆಂಟ್ ಅನ್ನು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಿ</string>
+    <string name="action_media_name">ಮಾಧ್ಯಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ ಅಥವಾ ವಿರಾಮಗೊಳಿಸಿ</string>
+    <string name="action_overview_name">ಇತ್ತೀಚಿನ ಆ್ಯಪ್‌ಗಳನ್ನು ನೋಡಿ</string>
+    <string name="action_notifications_name">ನೋಟಿಫಿಕೇಶನ್‌ಗಳನ್ನು ತೋರಿಸಿ</string>
+    <string name="action_flashlight_name">ಫ್ಲ್ಯಾಶ್‌ಲೈಟ್ ಟಾಗಲ್ ಮಾಡಿ</string>
+    <string name="action_launch_name">ಆ್ಯಪ್ ತೆರೆಯಿರಿ</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">ಕ್ವಿಕ್ ಟ್ಯಾಪ್ ಪತ್ತೆಯಾಗಿದೆ!</string>
+</resources>

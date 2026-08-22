@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Gyors koppintás műveletek indításához</string>
+    <string name="settings_entry_summary_on">Bekapcsolva / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Kikapcsolva</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Gyors koppintás használata</string>
+    <string name="setting_sensitivity_category_title">Gyors koppintás erőssége</string>
+    <string name="setting_low_sensitivity_title">Erősebben kell koppintani</string>
+    <string name="launch_settings_activity_title">Gyors koppintás beállításai</string>
+    <string name="setting_action_title" product="default">Koppintson kétszer a telefon hátoldalán a következő művelethez:</string>
+    <string name="setting_app_selection_help_text" product="default">Válassza ki, hogy melyik alkalmazás nyíljon meg, amikor kétszer a telefonja hátoldalára koppint. Ha eltávolítja az alkalmazást, a Gyors koppintás kikapcsolódik, amíg ki nem választ egy másik alkalmazást.</string>
+    <string name="setting_app_shortcut_selection_help_text">Válassza ki, hogy mi történjen, amikor megnyitja ezt az alkalmazást a Gyors koppintás használatával.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> beállításai</string>
+    <string name="setting_action_launch_summary_no_selection">Nincs kiválasztott alkalmazás</string>
+    <string name="setting_action_launch_summary_not_installed">Az alkalmazás nincs telepítve</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Képernyőkép készítése</string>
+    <string name="action_assistant_name">Hozzáférés a digitális asszisztenshez</string>
+    <string name="action_media_name">Médiatartalom lejátszása/szüneteltetése</string>
+    <string name="action_overview_name">Legutóbbi alkalmazások megtekintése</string>
+    <string name="action_notifications_name">Értesítések mutatása</string>
+    <string name="action_flashlight_name">Vaku be-, illetve kikapcsolása</string>
+    <string name="action_launch_name">Alkalmazás megnyitása</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Gyors koppintás észlelve!</string>
+</resources>

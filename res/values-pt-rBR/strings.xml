@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Toque Rápido para iniciar as ações</string>
+    <string name="settings_entry_summary_on">Ativado / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Desativado</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Usar o Toque Rápido</string>
+    <string name="setting_sensitivity_category_title">Intensidade do Toque Rápido</string>
+    <string name="setting_low_sensitivity_title">Exigir toques mais fortes</string>
+    <string name="launch_settings_activity_title">Configurações do Toque Rápido</string>
+    <string name="setting_action_title" product="default">Toque duas vezes na parte de trás do smartphone para</string>
+    <string name="setting_app_selection_help_text" product="default">Selecione um app para abrir ao tocar duas vezes na parte de trás do celular. Se você desinstalar o app, o Toque Rápido será desativado até que outro app seja selecionado.</string>
+    <string name="setting_app_shortcut_selection_help_text">Selecione o que acontece quando você abre o app usando o Toque Rápido.</string>
+    <string name="radio_button_extra_widget_a11y_label">Configurações para <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Nenhum app selecionado</string>
+    <string name="setting_action_launch_summary_not_installed">App não instalado</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Fazer uma captura de tela</string>
+    <string name="action_assistant_name">Acessar o assistente digital</string>
+    <string name="action_media_name">Abrir ou pausar mídia</string>
+    <string name="action_overview_name">Ver apps recentes</string>
+    <string name="action_notifications_name">Mostrar notificações</string>
+    <string name="action_flashlight_name">Ativar lanterna</string>
+    <string name="action_launch_name">Abrir app</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Toque Rápido detectado.</string>
+</resources>

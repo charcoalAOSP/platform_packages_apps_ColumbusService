@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Әрекеттерді бастау үшін жылдам түрту</string>
+    <string name="settings_entry_summary_on">Қосулы / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Өшірулі</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Жылдам түрту қимылын пайдалану</string>
+    <string name="setting_sensitivity_category_title">Жылдам түрту күші</string>
+    <string name="setting_low_sensitivity_title">Қаттырақ түртуді талап ету</string>
+    <string name="launch_settings_activity_title">Жылдам түрту параметрлері</string>
+    <string name="setting_action_title" product="default">Телефонның артқы жағын екі рет түрткенде орындалатын әрекет:</string>
+    <string name="setting_app_selection_help_text" product="default">Телефоныңыздың артқы жағын екі рет түрту кезінде ашылатын қолданбаны таңдаңыз. Егер қолданбаны жойсаңыз, жылдам түрту қимылы басқа қолданбаны таңдағанға дейін өшіп тұрады.</string>
+    <string name="setting_app_shortcut_selection_help_text">Бұл қолданбаны жылдам түрту арқылы ашу кезінде не болатынын таңдаңыз.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> параметрлері</string>
+    <string name="setting_action_launch_summary_no_selection">Ешқандай қолданба таңдалмады.</string>
+    <string name="setting_action_launch_summary_not_installed">Қолданба орнатылмаған.</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Скриншот жасау</string>
+    <string name="action_assistant_name">Цифрлық көмекшіні пайдалану</string>
+    <string name="action_media_name">Медиафайлды ойнату немесе кідірту</string>
+    <string name="action_overview_name">Соңғы қолданбаларды көру</string>
+    <string name="action_notifications_name">Хабарландыруларды көрсету</string>
+    <string name="action_flashlight_name">Қолшамды қосу/өшіру</string>
+    <string name="action_launch_name">Қолданбаны ашу</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Жылдам түрту қимылы анықталды.</string>
+</resources>

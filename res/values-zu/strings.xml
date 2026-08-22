@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Thepha Ngokushesha ukuze uqalise izenzo</string>
+    <string name="settings_entry_summary_on">Kuvuliwe / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Kuvaliwe</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Sebenzisa Ukuthepha Okusheshayo</string>
+    <string name="setting_sensitivity_category_title">Amandla Okuthepha Okusheshayo</string>
+    <string name="setting_low_sensitivity_title">Idinga ukuthepha okunamandla</string>
+    <string name="launch_settings_activity_title">Amasethingi Okuthepha Okusheshayo</string>
+    <string name="setting_action_title" product="default">Thepha ngemuva kwefoni kabili ukuze</string>
+    <string name="setting_app_selection_help_text" product="default">Khetha i-app ozoyivula lapho uthepha ngemuva kwefoni yakho kabili. Uma ukhipha i-app, Ukuthepha Okusheshayo kuyavaleka kuze kube yilapho ukhetha khona i-app ehlukile.</string>
+    <string name="setting_app_shortcut_selection_help_text">Khetha ukuthi kwenzekani lapho uvula le app usebenzisa Ukuthepha Okusheshayo.</string>
+    <string name="radio_button_extra_widget_a11y_label">Amasethingi we-<xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Ayikho i-app ekhethiwe</string>
+    <string name="setting_action_launch_summary_not_installed">I-app ayifakiwe</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Thatha isithombe-skrini</string>
+    <string name="action_assistant_name">Finyelela kumsizi wakho wedijithali</string>
+    <string name="action_media_name">Dlala noma phumuza imidiya</string>
+    <string name="action_overview_name">Bona izinhlelo zokusebenza zakamuva</string>
+    <string name="action_notifications_name">Bonisa izaziso</string>
+    <string name="action_flashlight_name">Guqula i-flashlight</string>
+    <string name="action_launch_name">Vula i-app</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Ukuthepha Okusheshayo kutholakele!</string>
+</resources>

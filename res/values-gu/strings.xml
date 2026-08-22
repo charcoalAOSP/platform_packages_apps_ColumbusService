@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">ઍક્શન શરૂ કરવા માટે ક્વિક ટૅપ કરો</string>
+    <string name="settings_entry_summary_on">ચાલુ / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">બંધ</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">ક્વિક ટૅપ સુવિધાનો ઉપયોગ કરો</string>
+    <string name="setting_sensitivity_category_title">ક્વિક ટૅપની પ્રબળતા</string>
+    <string name="setting_low_sensitivity_title">વધુ પ્રબળ ટૅપની જરૂર છે</string>
+    <string name="launch_settings_activity_title">ક્વિક ટૅપ સુવિધાના સેટિંગ</string>
+    <string name="setting_action_title" product="default">આવું કરવા ફોનની પાછળની બાજુ પર બે વાર ટૅપ કરો</string>
+    <string name="setting_app_selection_help_text" product="default">જ્યારે તમે તમારા ફોનની પાછળની બાજુ પર બે વાર ટૅપ કરો, ત્યારે ખોલવા માટેની ઍપ પસંદ કરો. જો તમે ઍપ અનઇન્સ્ટૉલ કરો છો, તો જ્યાર સુધી તમે કોઈ અલગ ઍપ પસંદ ન કરો, ત્યાર સુધી ક્વિક ટૅપ સુવિધા બંધ રહેશે.</string>
+    <string name="setting_app_shortcut_selection_help_text">જ્યારે તમે ક્વિક ટૅપ સુવિધાનો ઉપયોગ કરીને આ ઍપ ખોલો, ત્યારે શું થાય તે પસંદ કરો.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> સેટિંગ</string>
+    <string name="setting_action_launch_summary_no_selection">કોઈ ઍપ પસંદ કરેલી નથી</string>
+    <string name="setting_action_launch_summary_not_installed">ઍપ ઇન્સ્ટૉલ કરેલી નથી</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">સ્ક્રીનશૉટ લો</string>
+    <string name="action_assistant_name">તમારું ડિજિટલ આસિસ્ટન્ટ ઍક્સેસ કરો</string>
+    <string name="action_media_name">મીડિયા ચલાવો અથવા થોભાવો</string>
+    <string name="action_overview_name">તાજેતરની ઍપ જુઓ</string>
+    <string name="action_notifications_name">નોટિફિકેશન બતાવો</string>
+    <string name="action_flashlight_name">ફ્લૅશલાઇટને ટૉગલ કરો</string>
+    <string name="action_launch_name">ઍપ ખોલો</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">ક્વિક ટૅપ સુવિધાની ભાળ મળી!</string>
+</resources>

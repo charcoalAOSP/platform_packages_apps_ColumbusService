@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">„Брз допир“ за започнување дејства</string>
+    <string name="settings_entry_summary_on">Вклучено / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Исклучено</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Користи „Брз допир“</string>
+    <string name="setting_sensitivity_category_title">Сила за „Брз допир“</string>
+    <string name="setting_low_sensitivity_title">Барај посилни допири</string>
+    <string name="launch_settings_activity_title">Поставки за „Брз допир“</string>
+    <string name="setting_action_title" product="default">Допрете ја двапати задната страна на телефонот за</string>
+    <string name="setting_app_selection_help_text" product="default">Изберете ја апликацијата што сакате да се отвори кога ќе ја допрете задната страна на телефонот двапати. Ако ја деинсталирате апликацијата, „Брз допир“ ќе се исклучи додека не изберете друга апликација.</string>
+    <string name="setting_app_shortcut_selection_help_text">Изберете што да се случува кога ќе ја отворите апликацијава со „Брз допир“.</string>
+    <string name="radio_button_extra_widget_a11y_label">Поставки за <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Не е избрана апликација</string>
+    <string name="setting_action_launch_summary_not_installed">Апликацијата не е инсталирана</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Зачувување слика од екранот</string>
+    <string name="action_assistant_name">Пристап до дигиталниот помошник</string>
+    <string name="action_media_name">Пуштање или паузирање аудиовизуелни содржини</string>
+    <string name="action_overview_name">Приказ на неодамнешните апликации</string>
+    <string name="action_notifications_name">Прикажувај известувања</string>
+    <string name="action_flashlight_name">Вклучување/исклучување на светилката</string>
+    <string name="action_launch_name">Отворање апликација</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Откриен е „Брз допир“!</string>
+</resources>

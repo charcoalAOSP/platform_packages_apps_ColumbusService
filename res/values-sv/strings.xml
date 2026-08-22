@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Använd snabbtryck för att åtgärda</string>
+    <string name="settings_entry_summary_on">På / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Av</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Använd Snabbtryck</string>
+    <string name="setting_sensitivity_category_title">Styrka för Snabbtryck</string>
+    <string name="setting_low_sensitivity_title">Kräv kraftigare tryck</string>
+    <string name="launch_settings_activity_title">Inställningar för Snabbtryck</string>
+    <string name="setting_action_title" product="default">Tryck två gånger på baksidan av telefonen för att</string>
+    <string name="setting_app_selection_help_text" product="default">Välj en app som ska öppnas när du trycker två gånger på baksidan av telefonen. Om du avinstallerar appen inaktiveras Snabbtryck tills du väljer en annan app.</string>
+    <string name="setting_app_shortcut_selection_help_text">Välj vad som ska hända när du öppnar appen med Snabbtryck.</string>
+    <string name="radio_button_extra_widget_a11y_label">Inställningar för <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Inget app har valts</string>
+    <string name="setting_action_launch_summary_not_installed">Appen har inte installerats</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Ta skärmbild</string>
+    <string name="action_assistant_name">Komma åt din digitala assistent</string>
+    <string name="action_media_name">Spela upp eller pausa media</string>
+    <string name="action_overview_name">Visa de senast använda apparna</string>
+    <string name="action_notifications_name">Visa aviseringar</string>
+    <string name="action_flashlight_name">Tända ficklampan</string>
+    <string name="action_launch_name">Öppna appen</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Snabbtryck har registrerats</string>
+</resources>

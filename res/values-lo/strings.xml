@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">ການແຕະດ່ວນເພື່ອເລີ່ມຄຳສັ່ງ</string>
+    <string name="settings_entry_summary_on">ເປີດ / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">ປິດ</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">ໃຊ້ການແຕະດ່ວນ</string>
+    <string name="setting_sensitivity_category_title">ຄວາມແຮງການແຕະດ່ວນ</string>
+    <string name="setting_low_sensitivity_title">ຕ້ອງແຕະແຮງຂຶ້ນ</string>
+    <string name="launch_settings_activity_title">ການຕັ້ງຄ່າການແຕະດ່ວນ</string>
+    <string name="setting_action_title" product="default">ແຕະທາງຫຼັງຂອງໂທລະສັບສອງເທື່ອເພື່ອ</string>
+    <string name="setting_app_selection_help_text" product="default">ເລືອກແອັບເພື່ອເປີດເມື່ອທ່ານແຕະທາງຫຼັງຂອງໂທລະສັບຂອງທ່ານສອງເທື່ອ. ຫາກທ່ານຖອນການຕິດຕັ້ງແອັບ, ການແຕະດ່ວນຈະຖືກປິດໄວ້ຈົນກວ່າທ່ານຈະເລືອກແອັບອື່ນ.</string>
+    <string name="setting_app_shortcut_selection_help_text">ເລືອກສິ່ງທີ່ຈະເກີດຂຶ້ນເມື່ອທ່ານເປີດແອັບນີ້ໂດຍໃຊ້ການແຕະດ່ວນ.</string>
+    <string name="radio_button_extra_widget_a11y_label">ການຕັ້ງຄ່າ <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">ບໍ່ໄດ້ເລືອກແອັບ</string>
+    <string name="setting_action_launch_summary_not_installed">ບໍ່ໄດ້ຕິດຕັ້ງແອັບ</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">ຖ່າຍຮູບໜ້າຈໍ</string>
+    <string name="action_assistant_name">ເຂົ້າເຖິງຜູ້ຊ່ວຍດິຈິຕອນຂອງທ່ານ</string>
+    <string name="action_media_name">ຫຼິ້ນ ຫຼື ຢຸດມີເດຍຊົ່ວຄາວ</string>
+    <string name="action_overview_name">ເບິ່ງແອັບຫຼ້າສຸດ</string>
+    <string name="action_notifications_name">ສະແດງການແຈ້ງເຕືອນ</string>
+    <string name="action_flashlight_name">ເປີດ/ປິດ ໄຟສາຍ</string>
+    <string name="action_launch_name">ເປີດແອັບ</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">ກວດພົບການແຕະດ່ວນ!</string>
+</resources>

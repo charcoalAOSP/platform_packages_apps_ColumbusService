@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">कृती सुरू करण्यासाठी, क्विक टॅप करा</string>
+    <string name="settings_entry_summary_on">सुरू / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">बंद</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">क्विक टॅप वापरा</string>
+    <string name="setting_sensitivity_category_title">क्विक टॅप सामर्थ्य</string>
+    <string name="setting_low_sensitivity_title">जोरात टॅप करणे आवश्यक आहे</string>
+    <string name="launch_settings_activity_title">क्विक टॅप सेटिंग्ज</string>
+    <string name="setting_action_title" product="default">यासाठी फोनच्या मागच्या बाजूला दोनदा टॅप करा</string>
+    <string name="setting_app_selection_help_text" product="default">तुम्ही तुमच्या फोनच्या मागच्या बाजूला दोनदा टॅप करता, तेव्हा उघडण्यासाठी ॲप निवडा. तुम्ही ॲप अनइंस्टॉल केल्यास, दुसरे ॲप निवडेपर्यंत क्विक टॅप बंद राहील.</string>
+    <string name="setting_app_shortcut_selection_help_text">तुम्ही हे ॲप क्विक टॅप वापरून उघडता तेव्हा, काय होईल ते निवडा.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> सेटिंग्ज</string>
+    <string name="setting_action_launch_summary_no_selection">कोणतेही अ‍ॅप निवडलेले नाही</string>
+    <string name="setting_action_launch_summary_not_installed">ॲप इंस्टॉल केलेले नाही</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">स्क्रीनशॉट घ्या</string>
+    <string name="action_assistant_name">तुमचा डिजिटल असिस्टंट अ‍ॅक्सेस करा</string>
+    <string name="action_media_name">मीडिया प्ले करा किंवा थांबवा</string>
+    <string name="action_overview_name">अलीकडील ॲप्स पहा</string>
+    <string name="action_notifications_name">नोटिफिकेशन दाखवा</string>
+    <string name="action_flashlight_name">फ्लॅशलाइट टॉगल करा</string>
+    <string name="action_launch_name">अ‍ॅप उघडा</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">क्विक टॅप डिटेक्ट केले!</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Kviktryk til at starte handlinger</string>
+    <string name="settings_entry_summary_on">Til / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Fra</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Brug Kviktryk</string>
+    <string name="setting_sensitivity_category_title">Styrke for Kviktryk</string>
+    <string name="setting_low_sensitivity_title">Kræv hårdere tryk</string>
+    <string name="launch_settings_activity_title">Indstillinger for Kviktryk</string>
+    <string name="setting_action_title" product="default">Tryk to gange på bagsiden af telefonen</string>
+    <string name="setting_app_selection_help_text" product="default">Vælg en app, der skal åbnes, når du trykker to gange på bagsiden af din telefon. Hvis du afinstallerer appen, deaktiveres Kviktryk, indtil du vælger en anden app.</string>
+    <string name="setting_app_shortcut_selection_help_text">Vælg, hvad der skal ske, når du åbner denne app ved hjælp af Kviktryk.</string>
+    <string name="radio_button_extra_widget_a11y_label">Indstillinger for <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Der er ikke valgt nogen app</string>
+    <string name="setting_action_launch_summary_not_installed">Appen er ikke installeret</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Tag screenshot</string>
+    <string name="action_assistant_name">Få adgang til din digitale assistent</string>
+    <string name="action_media_name">Afspil eller sæt medie på pause</string>
+    <string name="action_overview_name">Se nyligt brugte apps</string>
+    <string name="action_notifications_name">Vis notifikationer</string>
+    <string name="action_flashlight_name">Tænd/sluk lommelygte</string>
+    <string name="action_launch_name">Åbn app</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Kviktryk blev registreret</string>
+</resources>

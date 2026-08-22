@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Тез баскылап, аракеттерди аткарып баштоо</string>
+    <string name="settings_entry_summary_on">Күйүк / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Өчүк</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Тез баскылоону иштетүү</string>
+    <string name="setting_sensitivity_category_title">Баскылоо күчү</string>
+    <string name="setting_low_sensitivity_title">Катуураак басууну талап кылуу</string>
+    <string name="launch_settings_activity_title">Тез баскылоо параметрлери</string>
+    <string name="setting_action_title" product="default">Телефонуңуздун аркасын эки жолу басып:</string>
+    <string name="setting_app_selection_help_text" product="default">Телефондун аркасын эки жолу басканда ачыла турган колдонмону тандаңыз. Колдонмону түзмөктөн чыгарып салсаңыз, башка колдонмо тандалмайынча тез баскылоо функциясы өчүп турат.</string>
+    <string name="setting_app_shortcut_selection_help_text">Бул колдонмону тез баскылап ачкандан кийин аткарыла турган аракетти тандаңыз.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> параметрлери</string>
+    <string name="setting_action_launch_summary_no_selection">Бар да колдонмо тандалган жок</string>
+    <string name="setting_action_launch_summary_not_installed">Колдонмо орнотулган эмес</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Скриншот тартуу</string>
+    <string name="action_assistant_name">Санариптик жардамчыны күйгүзүү</string>
+    <string name="action_media_name">Медиа файлды ойнотуу же тындыруу</string>
+    <string name="action_overview_name">Акыркы колдонмолорду көрүү</string>
+    <string name="action_notifications_name">Билдирмелерди көрсөтүү</string>
+    <string name="action_flashlight_name">Колчыракты өчүрүү/күйгүзүү</string>
+    <string name="action_launch_name">Колдонмону ачуу</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Тез баскылоо аныкталды!</string>
+</resources>

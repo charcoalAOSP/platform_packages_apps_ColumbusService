@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Ātrais pieskāriens, lai sāktu darbības</string>
+    <string name="settings_entry_summary_on">Ieslēgts / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Izslēgts</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Izmantot ātro pieskārienu</string>
+    <string name="setting_sensitivity_category_title">Ātrā pieskāriena stiprums</string>
+    <string name="setting_low_sensitivity_title">Reaģēt tikai uz stiprākiem pieskārieniem</string>
+    <string name="launch_settings_activity_title">Ātrā pieskāriena iestatījumi</string>
+    <string name="setting_action_title" product="default">Veicot dubultskārienu uz tālruņa aizmugures, var:</string>
+    <string name="setting_app_selection_help_text" product="default">Atlasiet lietotni, kas jāatver, kad ātri veicat dubultskārienu uz tālruņa aizmugures. Ja atinstalēsiet lietotni, ātrais pieskāriens tiks izslēgts, līdz atlasīsiet citu lietotni.</string>
+    <string name="setting_app_shortcut_selection_help_text">Atlasiet darbību, kas jāveic, ja atverat šo lietotni, izmantojot ātro pieskārienu.</string>
+    <string name="radio_button_extra_widget_a11y_label">Darbības “<xliff:g id="action">%1$s</xliff:g>” iestatījumi</string>
+    <string name="setting_action_launch_summary_no_selection">Nav atlasīta neviena lietotne</string>
+    <string name="setting_action_launch_summary_not_installed">Lietotne nav instalēta</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Izveidot ekrānuzņēmumu</string>
+    <string name="action_assistant_name">Piekļūt digitālajam asistentam</string>
+    <string name="action_media_name">Atskaņot multivides saturu / apturēt atskaņošanu</string>
+    <string name="action_overview_name">Skatīt nesen izmantotās lietotnes</string>
+    <string name="action_notifications_name">Rādīt paziņojumus</string>
+    <string name="action_flashlight_name">Ieslēgt/izslēgt lukturīti</string>
+    <string name="action_launch_name">Atvērt lietotni</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Tika konstatēts ātrais pieskāriens.</string>
+</resources>

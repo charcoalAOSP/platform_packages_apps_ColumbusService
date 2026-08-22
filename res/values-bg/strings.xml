@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Бързо докосване за стартиране на действия</string>
+    <string name="settings_entry_summary_on">Вкл. / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Изкл.</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Използване на жеста „Бързо докосване“</string>
+    <string name="setting_sensitivity_category_title">Сила за жеста „Бързо докосване“</string>
+    <string name="setting_low_sensitivity_title">Изискване на повече сила при докосванията</string>
+    <string name="launch_settings_activity_title">Настройки за жеста „Бързо докосване“</string>
+    <string name="setting_action_title" product="default">Докоснете двукратно задната част на телефона с цел</string>
+    <string name="setting_app_selection_help_text" product="default">Изберете приложение, което да се отваря при двукратно докосване на задната част на телефона. Ако деинсталирате съответното приложение, жестът „Бързо докосване“ се изключва, докато не изберете друго.</string>
+    <string name="setting_app_shortcut_selection_help_text">Изберете какво да се случва, когато отворите това приложение посредством жеста „Бързо докосване“.</string>
+    <string name="radio_button_extra_widget_a11y_label">Настройки за <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Няма избрано приложение</string>
+    <string name="setting_action_launch_summary_not_installed">Приложението не е инсталирано</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Създаване на екранна снимка</string>
+    <string name="action_assistant_name">Достъп до дигиталния ви асистент</string>
+    <string name="action_media_name">Пускане или поставяне на пауза на мултимедия</string>
+    <string name="action_overview_name">Преглед на скорошните приложения</string>
+    <string name="action_notifications_name">Показване на известията</string>
+    <string name="action_flashlight_name">Включване на фенерчето</string>
+    <string name="action_launch_name">Отваряне на приложение</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Разпознат е жестът „Бързо докосване“!</string>
+</resources>

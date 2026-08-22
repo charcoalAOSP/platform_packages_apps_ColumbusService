@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Käynnistä toimintoja pikanäpäytyksellä</string>
+    <string name="settings_entry_summary_on">Päällä / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Pois päältä</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Käytä pikanäpäytystä</string>
+    <string name="setting_sensitivity_category_title">Pikanäpäytyksen voimakkuus</string>
+    <string name="setting_low_sensitivity_title">Vaadi voimakkaampia napautuksia</string>
+    <string name="launch_settings_activity_title">Pikanäpäytyksen asetukset</string>
+    <string name="setting_action_title" product="default">Napauta puhelimen takaosaa kahdesti, jos haluat</string>
+    <string name="setting_app_selection_help_text" product="default">Valitse, mikä sovellus avataan, kun napautat puhelimen takaosaa kahdesti. Jos poistat sovelluksen, pikanäpäytys ei ole päällä ennen kuin valitset toisen sovelluksen.</string>
+    <string name="setting_app_shortcut_selection_help_text">Valitse, mitä tapahtuu, kun tämä sovellus avataan pikanäpäytyksellä.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g>: asetukset</string>
+    <string name="setting_action_launch_summary_no_selection">Ei valittua sovellusta</string>
+    <string name="setting_action_launch_summary_not_installed">Sovellusta ei asennettu</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">ottaa kuvakaappauksen</string>
+    <string name="action_assistant_name">käyttää digiavustajaa</string>
+    <string name="action_media_name">toistaa mediaa tai keskeyttää sen</string>
+    <string name="action_overview_name">nähdä viimeksi käytetyt sovellukset</string>
+    <string name="action_notifications_name">näyttää ilmoitukset</string>
+    <string name="action_flashlight_name">laittaa taskulampun päälle/pois</string>
+    <string name="action_launch_name">avata sovelluksen</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Pikanäpäytys havaittu</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Dotknij dwukrotnie, aby rozpocząć działania</string>
+    <string name="settings_entry_summary_on">Włączono / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Wyłączono</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Używaj dwukrotnego dotknięcia</string>
+    <string name="setting_sensitivity_category_title">Siła dwukrotnego dotknięcia</string>
+    <string name="setting_low_sensitivity_title">Wymagaj silniejszych dotknięć</string>
+    <string name="launch_settings_activity_title">Ustawienia dwukrotnego dotknięcia</string>
+    <string name="setting_action_title" product="default">Po dwukrotnym dotknięciu tylnej części telefonu</string>
+    <string name="setting_app_selection_help_text" product="default">Wybierz aplikację, która ma się otwierać, gdy 2 razy dotkniesz tylnej części telefonu. Jeśli odinstalujesz tę aplikację, dwukrotne dotknięcie będzie wyłączone do czasu, aż wybierzesz inną.</string>
+    <string name="setting_app_shortcut_selection_help_text">Wybierz, co ma się dziać, gdy otworzysz tę aplikację przy użyciu dwukrotnego dotknięcia.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> – ustawienia</string>
+    <string name="setting_action_launch_summary_no_selection">Nie wybrano aplikacji</string>
+    <string name="setting_action_launch_summary_not_installed">Aplikacja nie jest zainstalowana</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Zapisz zrzut ekranu</string>
+    <string name="action_assistant_name">Użyj asystenta cyfrowego</string>
+    <string name="action_media_name">Odtwórz lub wstrzymaj multimedia</string>
+    <string name="action_overview_name">Wyświetl ostatnie aplikacje</string>
+    <string name="action_notifications_name">Pokaż powiadomienia</string>
+    <string name="action_flashlight_name">Włącz lub wyłącz latarkę</string>
+    <string name="action_launch_name">Otwórz aplikację</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Wykryto dwukrotne dotknięcie</string>
+</resources>

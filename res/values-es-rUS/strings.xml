@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Usar Quick Tap para iniciar acciones</string>
+    <string name="settings_entry_summary_on">Activado / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Desactivado</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Usar Quick Tap</string>
+    <string name="setting_sensitivity_category_title">Intensidad de Quick Tap</string>
+    <string name="setting_low_sensitivity_title">Tocar con más fuerza</string>
+    <string name="launch_settings_activity_title">Configuración de Quick Tap</string>
+    <string name="setting_action_title" product="default">Tocar dos veces la parte posterior del teléfono para</string>
+    <string name="setting_app_selection_help_text" product="default">Selecciona la app que quieres abrir cuando presionas dos veces la parte posterior del teléfono. Si desinstalas la app, Quick Tap se desactivará hasta que selecciones una diferente.</string>
+    <string name="setting_app_shortcut_selection_help_text">Selecciona lo que sucede cuando abres esta app con Quick Tap.</string>
+    <string name="radio_button_extra_widget_a11y_label">Configuración de <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">No se seleccionó ninguna app</string>
+    <string name="setting_action_launch_summary_not_installed">No se instaló la app</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Tomar captura de pantalla</string>
+    <string name="action_assistant_name">Acceder a tu asistente digital</string>
+    <string name="action_media_name">Reproducir o pausar contenido</string>
+    <string name="action_overview_name">Ver apps recientes</string>
+    <string name="action_notifications_name">Mostrar notificaciones</string>
+    <string name="action_flashlight_name">Activar o desactivar linterna</string>
+    <string name="action_launch_name">Abrir app</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Se detectó Quick Tap</string>
+</resources>

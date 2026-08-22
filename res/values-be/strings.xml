@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Хуткі дотык для пачатку дзеянняў</string>
+    <string name="settings_entry_summary_on">Уключана / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Выключана</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Выкарыстоўваць Хуткі дотык</string>
+    <string name="setting_sensitivity_category_title">Сіла націску пры Хуткім дотыку</string>
+    <string name="setting_low_sensitivity_title">Патрабаваць мацнейшыя дотыкі</string>
+    <string name="launch_settings_activity_title">Налады Хуткага дотыку</string>
+    <string name="setting_action_title" product="default">Двойчы націснуць на заднюю частку тэлефона, каб</string>
+    <string name="setting_app_selection_help_text" product="default">Выберыце праграму, якая павінна адкрыцца падчас двайнога дотыку да задняй панэлі тэлефона. Калі вы выдаліце праграму, Хуткі дотык не будзе працаваць, пакуль вы не выбераце іншую праграму.</string>
+    <string name="setting_app_shortcut_selection_help_text">Выберыце, што павінна адбыцца, калі вы адкрыеце гэту праграму з дапамогай Хуткага дотыку.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g>: налады</string>
+    <string name="setting_action_launch_summary_no_selection">Праграмы не выбраны</string>
+    <string name="setting_action_launch_summary_not_installed">Праграма не ўсталявана</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Зрабіць здымак экрана</string>
+    <string name="action_assistant_name">Адкрыць лічбавага памочніка</string>
+    <string name="action_media_name">Прайграць або прыпыніць прайграванне медыязмесціва</string>
+    <string name="action_overview_name">Паказаць нядаўнія праграмы</string>
+    <string name="action_notifications_name">Паказаць апавяшчэнні</string>
+    <string name="action_flashlight_name">Уключыць/выключыць ліхтарык</string>
+    <string name="action_launch_name">Адкрыць праграму</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Выяўлены Хуткі дотык!</string>
+</resources>

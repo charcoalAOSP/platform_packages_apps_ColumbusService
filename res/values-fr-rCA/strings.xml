@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Double toucher pour démarrer les actions</string>
+    <string name="settings_entry_summary_on">Activé / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Désactivé</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Utiliser le Double toucher</string>
+    <string name="setting_sensitivity_category_title">Sensibilité du Double toucher</string>
+    <string name="setting_low_sensitivity_title">Exiger une pression plus forte</string>
+    <string name="launch_settings_activity_title">Paramètres du double toucher</string>
+    <string name="setting_action_title" product="default">Touchez deux fois le dos du téléphone pour</string>
+    <string name="setting_app_selection_help_text" product="default">"Sélectionnez une appli à ouvrir quand vous touchez deux fois le dos de votre téléphone. Si vous désinstallez l'appli, le double toucher sera désactivé tant que vous ne sélectionnerez pas une autre appli."</string>
+    <string name="setting_app_shortcut_selection_help_text">"Sélectionnez l'action à effectuer quand vous ouvrez cette appli avec le double toucher."</string>
+    <string name="radio_button_extra_widget_a11y_label">Paramètres de <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Aucune appli sélectionnée</string>
+    <string name="setting_action_launch_summary_not_installed">"L'appli n'a pas été installée"</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">"Prendre une capture d'écran"</string>
+    <string name="action_assistant_name">Accéder à votre assistant numérique</string>
+    <string name="action_media_name">Faire jouer ou mettre en pause le contenu multimédia</string>
+    <string name="action_overview_name">Voir les applis récentes</string>
+    <string name="action_notifications_name">Afficher les notifications</string>
+    <string name="action_flashlight_name">Activer ou désactiver la lampe de poche</string>
+    <string name="action_launch_name">Ouvrir une appli</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Double toucher détecté!</string>
+</resources>

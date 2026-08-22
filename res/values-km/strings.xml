@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">ប៉ះរហ័ស ដើម្បីចាប់ផ្ដើម​សកម្មភាព</string>
+    <string name="settings_entry_summary_on">បើក / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">បិទ</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">ប្រើការប៉ះរហ័ស</string>
+    <string name="setting_sensitivity_category_title">កម្លាំងនៃការប៉ះរហ័ស</string>
+    <string name="setting_low_sensitivity_title">តម្រូវឱ្យ​ប៉ះឱ្យខ្លាំងៗ</string>
+    <string name="launch_settings_activity_title">ការកំណត់ការប៉ះរហ័ស</string>
+    <string name="setting_action_title" product="default">ប៉ះ​ផ្នែកខាងក្រោយ​នៃទូរសព្ទពីរដង ដើម្បី</string>
+    <string name="setting_app_selection_help_text" product="default">ជ្រើសរើស​កម្មវិធី​ដែលត្រូវបើក នៅពេលអ្នក​ប៉ះផ្នែកខាងក្រោយ​នៃទូរសព្ទ​របស់អ្នក​ពីរដង។ ប្រសិនបើ​អ្នកលុប​កម្មវិធីនេះ ការប៉ះរហ័សនឹងបិទរហូតទាល់តែ​អ្នកជ្រើសរើស​កម្មវិធីផ្សេង​។</string>
+    <string name="setting_app_shortcut_selection_help_text">ជ្រើសរើស​ថាមានអ្វី​កើតឡើង នៅពេល​អ្នកបើក​កម្មវិធីនេះ​ដោយប្រើការប៉ះរហ័ស។</string>
+    <string name="radio_button_extra_widget_a11y_label">ការកំណត់ <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">មិនបាន​ជ្រើសរើស​កម្មវិធី​ណាមួយទេ</string>
+    <string name="setting_action_launch_summary_not_installed">មិន​បាន​ដំឡើង​កម្មវិធីទេ</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">ថត​រូបអេក្រង់</string>
+    <string name="action_assistant_name">ចូលប្រើ​ជំនួយការ​ឌីជីថល​របស់អ្នក</string>
+    <string name="action_media_name">ចាក់ ឬផ្អាក​មេឌៀ</string>
+    <string name="action_overview_name">មើល​កម្មវិធីថ្មីៗ</string>
+    <string name="action_notifications_name">បង្ហាញ​ការ​ជូន​ដំណឹង</string>
+    <string name="action_flashlight_name">បិទ/បើក​ពិល</string>
+    <string name="action_launch_name">បើកកម្មវិធី</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">ចាប់​បានការប៉ះរហ័ស!</string>
+</resources>

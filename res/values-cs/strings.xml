@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Rychlým poklepáním spouštět akce</string>
+    <string name="settings_entry_summary_on">Zapnuto / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Vypnuto</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Používat rychlé poklepání</string>
+    <string name="setting_sensitivity_category_title">Síla rychlého poklepání</string>
+    <string name="setting_low_sensitivity_title">Vyžadovat silnější klepnutí</string>
+    <string name="launch_settings_activity_title">Nastavení rychlého poklepání</string>
+    <string name="setting_action_title" product="default">Dvojitým klepnutím na zadní stranu telefonu:</string>
+    <string name="setting_app_selection_help_text" product="default">Vyberte aplikaci, která se otevře, když dvakrát klepnete na zadní stranu telefonu. Pokud ji odinstalujete, rychlé poklepání se vypne, dokud nevyberete jinou aplikaci.</string>
+    <string name="setting_app_shortcut_selection_help_text">Vyberte, co se stane, když tuto aplikaci otevřete pomocí rychlého poklepání.</string>
+    <string name="radio_button_extra_widget_a11y_label">Nastavení akce <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Není vybrána žádná aplikace</string>
+    <string name="setting_action_launch_summary_not_installed">Aplikace není nainstalována</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Pořídit snímek obrazovky</string>
+    <string name="action_assistant_name">Spustit digitálního asistenta</string>
+    <string name="action_media_name">Přehrát nebo pozastavit média</string>
+    <string name="action_overview_name">Zobrazit nedávné aplikace</string>
+    <string name="action_notifications_name">Zobrazit oznámení</string>
+    <string name="action_flashlight_name">Přepnout svítilnu</string>
+    <string name="action_launch_name">Otevřít aplikaci</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Bylo zjištěno rychlé poklepání.</string>
+</resources>

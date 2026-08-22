@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Dubbeltik om handelinge te begin</string>
+    <string name="settings_entry_summary_on">Aan / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Af</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Gebruik Dubbeltik</string>
+    <string name="setting_sensitivity_category_title">Dubbeltik-hardheid</string>
+    <string name="setting_low_sensitivity_title">Vereis harder tikke</string>
+    <string name="launch_settings_activity_title">Dubbeltik-instellings</string>
+    <string name="setting_action_title" product="default">Tik twee keer op agterkant van foon en</string>
+    <string name="setting_app_selection_help_text" product="default">Kies ’n app om oop te maak wanneer jy twee keer op die agterkant van jou foon tik. As jy die app deïnstalleer, skakel Dubbeltik af totdat jy ’n ander app kies.</string>
+    <string name="setting_app_shortcut_selection_help_text">Kies wat gebeur as jy hierdie app met Dubbeltik oopmaak.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g>-instellings</string>
+    <string name="setting_action_launch_summary_no_selection">Geen app is gekies nie</string>
+    <string name="setting_action_launch_summary_not_installed">App is nie geïnstalleer nie</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Neem skermkiekie</string>
+    <string name="action_assistant_name">Kry toegang tot jou digitale assistent</string>
+    <string name="action_media_name">Speel of onderbreek media</string>
+    <string name="action_overview_name">Sien onlangse apps</string>
+    <string name="action_notifications_name">Wys kennisgewings</string>
+    <string name="action_flashlight_name">Wissel flitslig</string>
+    <string name="action_launch_name">Maak app oop</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Dubbeltik bespeur!</string>
+</resources>

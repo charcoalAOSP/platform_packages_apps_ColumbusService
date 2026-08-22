@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">কাৰ্য আৰম্ভ কৰিবলৈ কুইক টেপ</string>
+    <string name="settings_entry_summary_on">অন কৰক / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">অফ হৈ আছে</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">কুইক টেপ ব্যৱহাৰ কৰক</string>
+    <string name="setting_sensitivity_category_title">কুইক টেপৰ জোৰ</string>
+    <string name="setting_low_sensitivity_title">আৰু জোৰেৰে টিপাৰ প্ৰয়োজন</string>
+    <string name="launch_settings_activity_title">কুইক টেপৰ ছেটিং</string>
+    <string name="setting_action_title" product="default">এয়া কৰিবলৈ ফ’নৰ পিছফালে দুবাৰ টিপক</string>
+    <string name="setting_app_selection_help_text" product="default">আপুনি নিজৰ ফ’নটোৰ পিছফালে দুবাৰ টিপিলে খোল খাবলৈ এটা এপ্‌ বাছনি কৰক। যদি আপুনি এপ্‌টো আনইনষ্টল কৰে তেন্তে, আপুনি এটা পৃথক এপ্‌ বাছনি নকৰা পৰ্যন্ত কুইক টেপ অফ হৈ থাকিব।</string>
+    <string name="setting_app_shortcut_selection_help_text">কুইক টেপ ব্যৱহাৰ কৰি এই এপ্‌টো খুলিলে কি হয় সেয়া বাছনি কৰক।</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g>ৰ ছেটিং</string>
+    <string name="setting_action_launch_summary_no_selection">কোনো এপ্‌ বাছনি কৰা হোৱা নাই</string>
+    <string name="setting_action_launch_summary_not_installed">এপ্‌টো ইনষ্টল কৰা হোৱা নাই</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">স্ক্ৰীনশ্বট লওক</string>
+    <string name="action_assistant_name">আপোনাৰ ডিজিটেল সহায়ক এক্সেছ কৰক</string>
+    <string name="action_media_name">মিডিয়া প্লে’ অথবা পজ কৰক</string>
+    <string name="action_overview_name">শেহতীয়া এপ্‌সমূহ চাওক</string>
+    <string name="action_notifications_name">জাননী দেখুৱাওক</string>
+    <string name="action_flashlight_name">ফ্লেশ্বলাইট ট’গল কৰক</string>
+    <string name="action_launch_name">এপ্‌টো খোলক</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">কুইক টেপ চিনাক্ত কৰা হৈছে!</string>
+</resources>

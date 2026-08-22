@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">ක්‍රියා ආරම්භ කිරීමට ඉක්මන් තට්ටු කිරීම</string>
+    <string name="settings_entry_summary_on">ක්‍රියාත්මකයි / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">ක්‍රියාවිරහිතයි</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">ඉක්මන් තට්ටු කිරීම භාවිත කරන්න</string>
+    <string name="setting_sensitivity_category_title">ඉක්මන් තට්ටු කිරීමේ ප්‍රබලතාව</string>
+    <string name="setting_low_sensitivity_title">වඩාත් දැඩි තට්ටු කිරීම් අවශ්‍යයි</string>
+    <string name="launch_settings_activity_title">ඉක්මන් තට්ටු කිරීමේ සැකසීම්</string>
+    <string name="setting_action_title" product="default">දුරකථනයෙහි පසුපස දෙවරක් තට්ටු කරන්න</string>
+    <string name="setting_app_selection_help_text" product="default">ඔබ ඔබගේ දුරකථනයේ පිටුපස දෙවරක් තට්ටු කරන විට විවෘත කිරීමට යෙදුමක් තෝරන්න. ඔබ යෙදුම අස්ථාපනය කළහොත්, ඉක්මන් තට්ටු කිරීම ඔබ වෙනත් යෙදුමක් තෝරන තෙක් ක්‍රියාවිරහිත වේ.</string>
+    <string name="setting_app_shortcut_selection_help_text">ඔබ ඉක්මන් තට්ටු කිරීම භාවිතයෙන් මෙම යෙදුම විවෘත කළ විට සිදු වන දේ තෝරන්න.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> සැකසීම්</string>
+    <string name="setting_action_launch_summary_no_selection">කිසිදු යෙදුමක් තෝරා නැත</string>
+    <string name="setting_action_launch_summary_not_installed">යෙදුම ස්ථාපනය කර නැත</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">තිර රුව ගන්න</string>
+    <string name="action_assistant_name">ඔබගේ ඩිජිටල් සහායක වෙත ප්‍රවේශ වන්න</string>
+    <string name="action_media_name">මාධ්‍ය ධාවන කරන්න හෝ විරාම කරන්න</string>
+    <string name="action_overview_name">මෑත යෙදුම් බලන්න</string>
+    <string name="action_notifications_name">දැනුම්දීම් පෙන්වන්න</string>
+    <string name="action_flashlight_name">ෆ්ලෑෂ්ලයිට් ටොගල කරන්න</string>
+    <string name="action_launch_name">යෙදුම විවෘත කරන්න</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">ඉක්මන් තට්ටු කිරීම අනාවරණය කර ගන්නා ලදි!</string>
+</resources>

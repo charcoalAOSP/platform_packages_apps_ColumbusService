@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">کارروائیاں شروع کرنے کے لیے فوری تھپتھپاہٹ</string>
+    <string name="settings_entry_summary_on">آن / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">آف</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">فوری تھپتھپاہٹ کا استعمال کریں</string>
+    <string name="setting_sensitivity_category_title">فوری تھپتھپاہٹ کی قوت</string>
+    <string name="setting_low_sensitivity_title">مضبوط تھپتھپاہٹیں درکار ہیں</string>
+    <string name="launch_settings_activity_title">فوری تھپتھپاہٹ کی ترتیبات</string>
+    <string name="setting_action_title" product="default">اس کے لئے فون کے پچھلے حصے پر دو بار تھپتھپائیں</string>
+    <string name="setting_app_selection_help_text" product="default">اپنے فون کے پچھلے حصّے پر دو بار تھپتھپانے پر کھولنے کے لیے ایک ایپ منتخب کریں۔ اگر آپ ایپ کو اَن انسٹال کرتے ہیں تو فوری تھپتھپاہٹ اس وقت تک آف رہتی ہے جب تک کہ آپ ایک مختلف ایپ منتخب نہیں کرتے ہیں۔</string>
+    <string name="setting_app_shortcut_selection_help_text">منتخب کریں کہ جب آپ فوری تھپتھپاہٹ کا استعمال کرتے ہوئے ایپ کھولتے ہیں تو کیا ہوتا ہے۔</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> کی ترتیبات</string>
+    <string name="setting_action_launch_summary_no_selection">کوئی ایپ منتخب نہیں ہے</string>
+    <string name="setting_action_launch_summary_not_installed">ایپ انسٹال نہیں ہے</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">اسکرین شاٹ لیں</string>
+    <string name="action_assistant_name">اپنی ڈیجیٹل اسسٹنٹ تک رسائی حاصل کریں</string>
+    <string name="action_media_name">میڈیا چلائیں یا موقوف کریں</string>
+    <string name="action_overview_name">حالیہ ایپس دیکھیں</string>
+    <string name="action_notifications_name">اطلاعات دکھائیں</string>
+    <string name="action_flashlight_name">فلیش لائٹ ٹوگل کریں</string>
+    <string name="action_launch_name">ایپ کھولیں</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">فوری تھپتھپاہٹ کا پتا چلا!</string>
+</resources>

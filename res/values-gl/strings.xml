@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Usar Toque rápido para iniciar accións</string>
+    <string name="settings_entry_summary_on">Activado / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Desactivado</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Usar xesto Toque rápido</string>
+    <string name="setting_sensitivity_category_title">Forza coa que debes realizar o xesto Toque rápido</string>
+    <string name="setting_low_sensitivity_title">Requirir toques máis fortes</string>
+    <string name="launch_settings_activity_title">Configuración do xesto Toque rápido</string>
+    <string name="setting_action_title" product="default">Toca a parte traseira do teléfono dúas veces para</string>
+    <string name="setting_app_selection_help_text" product="default">Selecciona a aplicación que queres que se abra cando toques a parte traseira do teléfono dúas veces. Se desinstalas a aplicación, o xesto Toque rápido desactivarase ata que selecciones outra.</string>
+    <string name="setting_app_shortcut_selection_help_text">Selecciona o que queres que pase cando abras esta aplicación co xesto Toque rápido.</string>
+    <string name="radio_button_extra_widget_a11y_label">Configuración de <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Non hai ningunha aplicación seleccionada</string>
+    <string name="setting_action_launch_summary_not_installed">A aplicación non está instalada</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Facer captura de pantalla</string>
+    <string name="action_assistant_name">Acceder ao asistente dixital</string>
+    <string name="action_media_name">Reproducir ou pór en pausa contido multimedia</string>
+    <string name="action_overview_name">Ver aplicacións recentes</string>
+    <string name="action_notifications_name">Mostrar notificacións</string>
+    <string name="action_flashlight_name">Activar/desactivar lanterna</string>
+    <string name="action_launch_name">Abrir aplicación</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Detectouse o xesto Toque rápido.</string>
+</resources>

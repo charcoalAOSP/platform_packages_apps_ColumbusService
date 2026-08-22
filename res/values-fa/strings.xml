@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">«تک‌ضرب سریع» برای شروع کنش‌ها</string>
+    <string name="settings_entry_summary_on">روشن / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">خاموش</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">استفاده از «تک‌ضرب سریع»</string>
+    <string name="setting_sensitivity_category_title">شدت «تک‌ضرب سریع»</string>
+    <string name="setting_low_sensitivity_title">درخواست تک‌ضرب‌های محکم‌تر</string>
+    <string name="launch_settings_activity_title">تنظیمات «تک‌ضرب سریع»</string>
+    <string name="setting_action_title" product="default">دو تک‌ضرب زدن به پشت تلفن برای</string>
+    <string name="setting_app_selection_help_text" product="default">برنامه‌ای را انتخاب کنید تا هنگامی که به پشت تلفن دو تک‌ضرب می‌زنید باز شود. اگر برنامه را حذف نصب کنید، تا زمانی‌که برنامه دیگری را انتخاب نکنید، «تک‌ضرب سریع» خاموش می‌ماند.</string>
+    <string name="setting_app_shortcut_selection_help_text">انتخاب کنید که هنگام باز کردن این برنامه بااستفاده از «ضربه سریع»، چه اتفاقی بیفتد.</string>
+    <string name="radio_button_extra_widget_a11y_label">تنظیمات <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">برنامه‌ای انتخاب نشده است</string>
+    <string name="setting_action_launch_summary_not_installed">برنامه نصب نشد</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">گرفتن نماگرفت</string>
+    <string name="action_assistant_name">دسترسی به دستیار دیجیتالی</string>
+    <string name="action_media_name">پخش یا توقف موقت رسانه</string>
+    <string name="action_overview_name">مشاهده برنامه‌های اخیر</string>
+    <string name="action_notifications_name">نشان دادن اعلان‌ها</string>
+    <string name="action_flashlight_name">روشن/ خاموش کردن چراغ قوه</string>
+    <string name="action_launch_name">باز کردن برنامه</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">«ضربه سریع» شناسایی شد!</string>
+</resources>

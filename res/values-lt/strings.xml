@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Veiksmų pradžia naudojant „Quick Tap“</string>
+    <string name="settings_entry_summary_on">Įjungta / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Išjungta</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Naudoti „Quick Tap“</string>
+    <string name="setting_sensitivity_category_title">„Quick Tap“ intensyvumas</string>
+    <string name="setting_low_sensitivity_title">Intensyvesnių palietimų reikalavimas</string>
+    <string name="launch_settings_activity_title">„Quick Tap“ nustatymai</string>
+    <string name="setting_action_title" product="default">Veiksmų atlikimas dukart palietus telefono nugarėlę</string>
+    <string name="setting_app_selection_help_text" product="default">Pasirinkite programą, kuri bus atidaryta dukart palietus telefono nugarėlę. Jei pašalinsite programą, „Quick Tap“ bus išjungta, kol pasirinksite kitą programą.</string>
+    <string name="setting_app_shortcut_selection_help_text">Pasirinkite, kas nutinka, kai atidarote šią programą naudodami „Quick Tap“.</string>
+    <string name="radio_button_extra_widget_a11y_label">„<xliff:g id="action">%1$s</xliff:g>“ nustatymai</string>
+    <string name="setting_action_launch_summary_no_selection">Nepasirinkta jokių programų</string>
+    <string name="setting_action_launch_summary_not_installed">Programa neįdiegta</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Ekrano kopijos kūrimas</string>
+    <string name="action_assistant_name">Skaitmeninio pagelbiklio pasiekiamumas</string>
+    <string name="action_media_name">Medijos leidimas arba pristabdymas</string>
+    <string name="action_overview_name">Žr. naujausias programas</string>
+    <string name="action_notifications_name">Pranešimų rodymas</string>
+    <string name="action_flashlight_name">Perjungti žibintuvėlį</string>
+    <string name="action_launch_name">Programos atidarymas</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Aptikta „Quick Tap“!</string>
+</resources>

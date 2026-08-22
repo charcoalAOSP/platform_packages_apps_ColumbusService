@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">더블 탭하여 작업 시작하기</string>
+    <string name="settings_entry_summary_on">사용 / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">사용 안함</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">더블 탭 사용</string>
+    <string name="setting_sensitivity_category_title">더블 탭 강도</string>
+    <string name="setting_low_sensitivity_title">더 강한 탭 필요</string>
+    <string name="launch_settings_activity_title">더블 탭 설정</string>
+    <string name="setting_action_title" product="default">휴대전화 뒷면을 두 번 탭하여 실행할 작업</string>
+    <string name="setting_app_selection_help_text" product="default">휴대전화 뒷면을 두 번 탭하여 열 앱을 선택하세요. 선택한 앱을 제거하면 다른 앱을 선택할 때까지 더블 탭이 작동하지 않습니다.</string>
+    <string name="setting_app_shortcut_selection_help_text">앱을 더블 탭으로 열 때 실행할 작업을 선택하세요.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> 설정</string>
+    <string name="setting_action_launch_summary_no_selection">선택한 앱 없음</string>
+    <string name="setting_action_launch_summary_not_installed">앱이 설치되지 않음</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">스크린샷 촬영</string>
+    <string name="action_assistant_name">디지털 어시스턴트에 액세스</string>
+    <string name="action_media_name">미디어 재생 또는 일시중지</string>
+    <string name="action_overview_name">최근 앱 보기</string>
+    <string name="action_notifications_name">알림 표시</string>
+    <string name="action_flashlight_name">손전등 전환</string>
+    <string name="action_launch_name">앱 열기</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">더블 탭이 감지되었습니다.</string>
+</resources>

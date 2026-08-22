@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">କାର୍ଯ୍ୟଗୁଡ଼ିକ ଆରମ୍ଭ କରିବାକୁ କ୍ଵିକ ଟାପ ବ୍ୟବହାର କରନ୍ତୁ</string>
+    <string name="settings_entry_summary_on">ଚାଲୁ / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">ବନ୍ଦ</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">କୁଇକ୍ ଟାପ୍ ବ୍ୟବହାର କରନ୍ତୁ</string>
+    <string name="setting_sensitivity_category_title">କୁଇକ୍ ଟାପ୍ କ୍ଷମତା</string>
+    <string name="setting_low_sensitivity_title">ଆହୁରି ଜୋରରେ ଟାପ୍ କରିବା ଆବଶ୍ୟକ</string>
+    <string name="launch_settings_activity_title">କୁଇକ୍ ଟାପ ସେଟିଂସ</string>
+    <string name="setting_action_title" product="default">ଏହା କରିବାକୁ ଫୋନର ପଛ ପଟେ ଦୁଇଥର ଟାପ୍ କରନ୍ତୁ</string>
+    <string name="setting_app_selection_help_text" product="default">ଆପଣ ଆପଣଙ୍କ ଫୋନର ପଛ ପଟେ ଦୁଇଥର ଟାପ୍ କରି ଖୋଲିବାକୁ ଚାହୁଁଥିବା କୌଣସି ଆପ୍ ଚୟନ କରନ୍ତୁ। ଯଦି ଆପଣ ଏହି ଆପକୁ ଅନଇନଷ୍ଟଲ୍ କରନ୍ତି, ତେବେ ଆପଣ ଏକ ଭିନ୍ନ ଆପ୍ ଚୟନ ନକରିବା ପର୍ଯ୍ୟନ୍ତ କୁଇକ୍ ଟାପ୍ ବନ୍ଦ ରହିଥାଏ।</string>
+    <string name="setting_app_shortcut_selection_help_text">ଆପଣ କୁଇକ୍ ଟାପ୍ ବ୍ୟବହାର କରି ଏହି ଆପ୍ ଖୋଲିଲେ କଣ ହୁଏ ତାହା ଚୟନ କରନ୍ତୁ।</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> ସେଟିଂସ</string>
+    <string name="setting_action_launch_summary_no_selection">କୌଣସି ଆପ୍ ଚୟନ କରାଯାଇନାହିଁ</string>
+    <string name="setting_action_launch_summary_not_installed">ଆପ୍ ଇନଷ୍ଟଲ୍ କରାଯାଇନାହିଁ</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">ସ୍କ୍ରିନସଟ୍ ନିଅନ୍ତୁ</string>
+    <string name="action_assistant_name">ଆପଣଙ୍କ ଡିଜିଟାଲ୍ Assistantକୁ ଆକ୍ସେସ୍ କରନ୍ତୁ</string>
+    <string name="action_media_name">ମିଡିଆ ଚଲାନ୍ତୁ ବା ବିରତ କରନ୍ତୁ</string>
+    <string name="action_overview_name">ବର୍ତ୍ତମାନର ଆପଗୁଡ଼ିକୁ ଦେଖନ୍ତୁ</string>
+    <string name="action_notifications_name">ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ଦେଖାନ୍ତୁ</string>
+    <string name="action_flashlight_name">ଫ୍ଲାସଲାଇଟ ଟୋଗଲ କରନ୍ତୁ</string>
+    <string name="action_launch_name">ଆପ ଖୋଲନ୍ତୁ</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">କୁଇକ୍ ଟାପ୍ ଚିହ୍ନଟ କରାଯାଇଛି!</string>
+</resources>

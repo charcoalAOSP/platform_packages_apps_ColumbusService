@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">ਕਾਰਵਾਈਆਂ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਕਵਿੱਕ ਟੈਪ</string>
+    <string name="settings_entry_summary_on">ਚਾਲੂ / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">ਬੰਦ</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">ਕਵਿੱਕ ਟੈਪ ਵਰਤੋ</string>
+    <string name="setting_sensitivity_category_title">ਕਵਿੱਕ ਟੈਪ ਦੀ ਤੀਬਰਤਾ</string>
+    <string name="setting_low_sensitivity_title">ਮਜ਼ਬੂਤ ਟੈਪਾਂ ਦੀ ਲੋੜ ਹੈ</string>
+    <string name="launch_settings_activity_title">ਕਵਿੱਕ ਟੈਪ ਸੈਟਿੰਗਾਂ</string>
+    <string name="setting_action_title" product="default">ਇਸ ਦੇ ਲਈ ਫ਼ੋਨ ਦੇ ਪਿਛਲੇ ਪਾਸੇ ਦੋ ਵਾਰ ਟੈਪ ਕਰੋ</string>
+    <string name="setting_app_selection_help_text" product="default">ਉਹ ਐਪ ਚੁਣੋ ਜਿਸਨੂੰ ਤੁਸੀਂ ਆਪਣੇ ਫ਼ੋਨ ਦੇ ਪਿਛਲੇ ਪਾਸੇ ਦੋ ਵਾਰ ਟੈਪ ਕਰ ਕੇ ਖੋਲ੍ਹਣਾ ਚਾਹੁੰਦੇ ਹੋ। ਜੇ ਤੁਸੀਂ ਐਪ ਨੂੰ ਅਣਸਥਾਪਤ ਕਰਦੇ ਹੋ, ਤਾਂ ਕਵਿੱਕ ਟੈਪ ਉਦੋਂ ਤੱਕ ਬੰਦ ਹੋ ਜਾਂਦਾ ਹੈ, ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਕੋਈ ਹੋਰ ਐਪ ਨਹੀਂ ਚੁਣਦੇ।</string>
+    <string name="setting_app_shortcut_selection_help_text">ਚੁਣੋ ਕਿ ਜਦੋਂ ਤੁਸੀਂ ਕਵਿੱਕ ਟੈਪ ਦੀ ਵਰਤੋਂ ਨਾਲ ਇਸ ਐਪ ਨੂੰ ਖੋਲ੍ਹਦੇ ਹੋ ਤਾਂ ਕੀ ਹੁੰਦਾ ਹੈ।</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> ਸੈਟਿੰਗਾਂ</string>
+    <string name="setting_action_launch_summary_no_selection">ਕੋਈ ਐਪ ਨਹੀਂ ਚੁਣੀ ਗਈ</string>
+    <string name="setting_action_launch_summary_not_installed">ਐਪ ਸਥਾਪਤ ਨਹੀਂ ਕੀਤੀ ਗਈ</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">ਸਕ੍ਰੀਨਸ਼ਾਟ ਲਓ</string>
+    <string name="action_assistant_name">ਆਪਣੀ ਡਿਜੀਟਲ ਅਸਿਸਟੈਂਟ ਤੱਕ ਪਹੁੰਚ ਕਰੋ</string>
+    <string name="action_media_name">ਮੀਡੀਆ ਚਲਾਓ ਜਾਂ ਰੋਕੋ</string>
+    <string name="action_overview_name">ਹਾਲੀਆ ਐਪਾਂ ਦੇਖੋ</string>
+    <string name="action_notifications_name">ਸੂਚਨਾਵਾਂ ਦਿਖਾਓ</string>
+    <string name="action_flashlight_name">ਫਲੈਸ਼ਲਾਈਟ ਨੂੰ ਟੌਗਲ ਕਰੋ</string>
+    <string name="action_launch_name">ਐਪ ਖੋਲ੍ਹੋ</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">ਕਵਿੱਕ ਟੈਪ ਦਾ ਪਤਾ ਲੱਗਿਆ!</string>
+</resources>

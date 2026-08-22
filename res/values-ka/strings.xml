@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">სწრაფად შეეხეთ მოქმედებების დასაწყებად</string>
+    <string name="settings_entry_summary_on">ჩართული / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">გამორთული</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">„სწრაფი შეხების“ გამოყენება</string>
+    <string name="setting_sensitivity_category_title">„სწრაფი შეხების“ სიძლიერე</string>
+    <string name="setting_low_sensitivity_title">უფრო ძლიერად შეხების მოთხოვნა</string>
+    <string name="launch_settings_activity_title">„სწრაფი შეხების“ პარამეტრები</string>
+    <string name="setting_action_title" product="default">ორმაგად შეეხეთ ტელეფონის უკანა მხარეს, რომ შეძლოთ</string>
+    <string name="setting_app_selection_help_text" product="default">აირჩიეთ აპი, რომელიც გაიხსნება თქვენი ტელეფონის უკანა მხარეზე ორმაგი შეხებით. აპის დეინსტალაციის შემთხვევაში, „სწრაფი შეხება“ გამოირთვება სხვა აპის არჩევამდე.</string>
+    <string name="setting_app_shortcut_selection_help_text">აირჩიეთ, რა მოხდეს, როცა აპს „სწრაფი შეხებით“ გახსნით.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g> — პარამეტრები</string>
+    <string name="setting_action_launch_summary_no_selection">აპი არჩეული არ არის</string>
+    <string name="setting_action_launch_summary_not_installed">აპი დაუინსტალირებელია</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">ეკრანის ანაბეჭდის გადაღება</string>
+    <string name="action_assistant_name">თქვენს ციფრულ ასისტენტზე წვდომა</string>
+    <string name="action_media_name">მედიის დაკვრა ან დაპაუზება</string>
+    <string name="action_overview_name">ბოლოს გამოყენებული აპების ნახვა</string>
+    <string name="action_notifications_name">შეტყობინებების ჩვენება</string>
+    <string name="action_flashlight_name">ფარანის გადართვა</string>
+    <string name="action_launch_name">აპის გახსნა</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">გამოვლინდა „სწრაფი შეხება“!</string>
+</resources>

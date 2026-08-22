@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Үйлдлийг эхлүүлэх Шуурхай товшилт</string>
+    <string name="settings_entry_summary_on">Идэвхтэй / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Идэвхгүй</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Шуурхай товшилтыг ашиглах</string>
+    <string name="setting_sensitivity_category_title">Шуурхай товшилтын хүч</string>
+    <string name="setting_low_sensitivity_title">Илүү хүчтэй товшилт шаардлагатай</string>
+    <string name="launch_settings_activity_title">Шуурхай товшилтын тохиргоо</string>
+    <string name="setting_action_title" product="default">Дараахыг хийхийн тулд утасныхаа арыг хоёр товшино уу</string>
+    <string name="setting_app_selection_help_text" product="default">Та утасныхаа ард хоёр товших үедээ нээх аппыг сонгоно уу. Тус аппыг устгасан тохиолдолд таныг өөр апп сонгох хүртэл Шуурхай товшилтыг унтраана.</string>
+    <string name="setting_app_shortcut_selection_help_text">Та Шуурхай товшилтыг ашиглан энэ аппыг нээх үед хийгдэх үйлдлийг сонгоно уу.</string>
+    <string name="radio_button_extra_widget_a11y_label"><xliff:g id="action">%1$s</xliff:g>-н тохиргоо</string>
+    <string name="setting_action_launch_summary_no_selection">Ямар ч апп сонгоогүй байна</string>
+    <string name="setting_action_launch_summary_not_installed">Аппыг суулгаагүй</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Дэлгэцийн агшныг дарах</string>
+    <string name="action_assistant_name">Дижитал туслахдаа хандах</string>
+    <string name="action_media_name">Медиаг тоглуулах эсвэл түр зогсоох</string>
+    <string name="action_overview_name">Саяхны аппуудыг харах</string>
+    <string name="action_notifications_name">Мэдэгдэл харуулах</string>
+    <string name="action_flashlight_name">Гар чийдэн асаах/унтраах</string>
+    <string name="action_launch_name">Аппыг нээх</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">Шуурхай товшилт илэрлээ!</string>
+</resources>

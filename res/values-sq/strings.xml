@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">\"Trokit shpejt\" për të filluar veprimet</string>
+    <string name="settings_entry_summary_on">Aktiv / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Joaktiv</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Përdor \"Trokitjen e shpejtë\"</string>
+    <string name="setting_sensitivity_category_title">Forca e \"Trokitjes së shpejtë\"</string>
+    <string name="setting_low_sensitivity_title">Kërko trokitje më të forta</string>
+    <string name="launch_settings_activity_title">Cilësimet e \"Trokitjes së shpejtë\"</string>
+    <string name="setting_action_title" product="default">Duke trokitur dy herë pjesën e pasme të telefonit:</string>
+    <string name="setting_app_selection_help_text" product="default">Zgjidh një aplikacion për ta hapur kur troket dy herë në pjesën e pasme të telefonit tënd. Nëse e çinstalon aplikacionin, \"Trokitja e shpejtë\" çaktivizohet derisa të zgjedhësh një aplikacion tjetër.</string>
+    <string name="setting_app_shortcut_selection_help_text">Zgjidh se çfarë ndodh kur e hap këtë aplikacion duke përdorur \"Trokitjen e shpejtë\".</string>
+    <string name="radio_button_extra_widget_a11y_label">Cilësimet e <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">Nuk është zgjedhur asnjë aplikacion</string>
+    <string name="setting_action_launch_summary_not_installed">Aplikacioni nuk u instalua</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Nxirr një pamje të ekranit</string>
+    <string name="action_assistant_name">Qasu tek asistenti yt dixhital</string>
+    <string name="action_media_name">Luaj ose vendos në pauzë median</string>
+    <string name="action_overview_name">Shiko aplikacionet e fundit</string>
+    <string name="action_notifications_name">Shfaq njoftimet</string>
+    <string name="action_flashlight_name">Aktivizo/çaktivizo blicin</string>
+    <string name="action_launch_name">Hap aplikacionin</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">U zbulua \"Trokitja e shpejtë\"!</string>
+</resources>

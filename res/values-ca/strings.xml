@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">Toc ràpid per iniciar accions</string>
+    <string name="settings_entry_summary_on">Activat / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">Desactivat</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">Utilitza Toc ràpid</string>
+    <string name="setting_sensitivity_category_title">Força del gest Toc ràpid</string>
+    <string name="setting_low_sensitivity_title">Requereix tocs més forts</string>
+    <string name="launch_settings_activity_title">Configuració de Toc ràpid</string>
+    <string name="setting_action_title" product="default">En tocar dues vegades la part posterior del telèfon</string>
+    <string name="setting_app_selection_help_text" product="default">"Selecciona quina aplicació vols obrir quan toques la part posterior del telèfon dues vegades. Si desinstal·les l'aplicació, Toc ràpid es desactivarà fins que seleccionis una altra aplicació."</string>
+    <string name="setting_app_shortcut_selection_help_text">Tria què passa quan obres aquesta aplicació amb Toc ràpid.</string>
+    <string name="radio_button_extra_widget_a11y_label">Configuració <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="setting_action_launch_summary_no_selection">"No s'ha seleccionat cap aplicació"</string>
+    <string name="setting_action_launch_summary_not_installed">"L'aplicació no està instal·lada"</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">Fes una captura de pantalla</string>
+    <string name="action_assistant_name">Accedeix al teu assistent digital</string>
+    <string name="action_media_name">Reprodueix o posa en pausa el contingut multimèdia</string>
+    <string name="action_overview_name">Mostra les aplicacions recents</string>
+    <string name="action_notifications_name">Mostra les notificacions</string>
+    <string name="action_flashlight_name">Commuta la llanterna</string>
+    <string name="action_launch_name">Obre una aplicació</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">"S'ha detectat Toc ràpid."</string>
+</resources>

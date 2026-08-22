@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: The rwiceAOSP Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Entry points in Settings -->
+    <string name="settings_entry_title">እርምጃዎችን ለመጀመር ፈጣን መታ ያድርጉ</string>
+    <string name="settings_entry_summary_on">በርቷል / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="settings_entry_summary_off">ጠፍቷል</string>
+
+    <!-- Items in Quick Tap gesture settings -->
+    <string name="setting_enabled_title">ፈጣን መታ ማድረግን ይጠቀሙ</string>
+    <string name="setting_sensitivity_category_title">የፈጣን መታ ማድረግ ጥንካሬ</string>
+    <string name="setting_low_sensitivity_title">ጠንከር ያሉ መታ ማድረጎችን ይጠይቁ</string>
+    <string name="launch_settings_activity_title">የፈጣን መታ ማድረግ ቅንብሮች</string>
+    <string name="setting_action_title" product="default">የሚከተለውን ለማድረግ የስልክ ጀርባን ሁለቴ መታ ያድርጉ፦</string>
+    <string name="setting_app_selection_help_text" product="default">የስልክዎን ጀርባ ሁለት ጊዜ መታ ሲያደርጉት የሚከፈተውን መተግበሪያ ይምረጡ። መተግበሪያውን ካራገፉት ሌላ መተግበሪያ እስከሚመርጡ ድረስ ፈጣን መታ ማድረግ ይጠፋል።</string>
+    <string name="setting_app_shortcut_selection_help_text">ፈጣን መታ ማድረግን በመጠቀም ይህን መተግበሪያ ሲከፍቱት ጊዜ ምን እንደሚከሰት ይምረጡ።</string>
+    <string name="radio_button_extra_widget_a11y_label">የ<xliff:g id="action">%1$s</xliff:g> ቅንብሮች</string>
+    <string name="setting_action_launch_summary_no_selection">ምንም መተግበሪያ አልተመረጠም</string>
+    <string name="setting_action_launch_summary_not_installed">መተግበሪያ አልተጫነም</string>
+
+    <!-- Actions -->
+    <string name="action_screenshot_name">ቅጽበታዊ ገጽ ዕይታን ያንሱ</string>
+    <string name="action_assistant_name">የእርስዎን ዲጂታል ረዳት ይድረሱበት</string>
+    <string name="action_media_name">ሚዲያን ያጫውቱ ወይም ባለበት ያቁሙ</string>
+    <string name="action_overview_name">የቅርብ ጊዜ መተግበሪያዎችን ይመልከቱ</string>
+    <string name="action_notifications_name">ማሳወቂያዎችን አሳይ</string>
+    <string name="action_flashlight_name">የባትሪ ብርሃኑን ይቀያይሩ</string>
+    <string name="action_launch_name">መተግበሪያን ክፈት</string>
+
+    <!-- Toast -->
+    <string name="gesture_detected">ፈጣን መታ ማድረግ ተገኝቷል!</string>
+</resources>
