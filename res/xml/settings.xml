@@ -38,19 +38,6 @@
             android:selectable="true"
             android:defaultValue="@integer/default_sensitivity"
             android:dependency="@string/pref_key_enabled" />
-
-        <com.android.settingslib.widget.SliderPreference
-            android:key="@string/pref_key_haptic_intensity"
-            android:title="@string/setting_haptic_intensity_title"
-            app:textStart="@string/setting_haptic_intensity_light"
-            app:textEnd="@string/setting_haptic_intensity_strong"
-            android:min="0"
-            android:max="2"
-            app:seekBarIncrement="1"
-            app:tickMark="@android:color/transparent"
-            android:selectable="true"
-            android:defaultValue="@integer/default_haptic_intensity"
-            android:dependency="@string/pref_key_enabled" />
     </PreferenceCategory>
 
 </PreferenceScreen>

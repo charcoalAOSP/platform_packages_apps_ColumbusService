@@ -136,23 +136,3 @@ fun SharedPreferences.setLaunchActionAppShortcut(context: Context, shortcut: Str
 fun SharedPreferences.getLaunchActionAppShortcut(context: Context): String? {
     return getString(context.getString(R.string.pref_key_launch_app_shortcut), null)
 }
-
-fun SharedPreferences.getHapticIntensity(context: Context): Int {
-    val hapticIntensityKey = context.getString(R.string.pref_key_haptic_intensity)
-    val defaultHapticIntensity = context.resources.getInteger(R.integer.default_haptic_intensity)
-
-    return try {
-        getInt(hapticIntensityKey, defaultHapticIntensity)
-    } catch (e: ClassCastException) {
-        val stringValue = getString(hapticIntensityKey, null)
-        val intValue = stringValue?.toIntOrNull() ?: defaultHapticIntensity
-
-        with(edit()) {
-            remove(hapticIntensityKey)
-            putInt(hapticIntensityKey, intValue)
-            apply()
-        }
-
-        intValue
-    }
-}

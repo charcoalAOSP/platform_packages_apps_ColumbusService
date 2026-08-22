@@ -15,8 +15,6 @@ import android.content.pm.LauncherApps
 import android.media.AudioAttributes
 import android.os.Bundle
 import android.os.UserHandle
-import android.os.VibrationEffect
-import android.os.VibratorManager
 import android.provider.Settings
 import android.util.DisplayMetrics
 import android.view.View
@@ -36,7 +34,6 @@ import org.protonaosp.columbus.dlog
 import org.protonaosp.columbus.getAction
 import org.protonaosp.columbus.getDePrefs
 import org.protonaosp.columbus.getEnabled
-import org.protonaosp.columbus.getHapticIntensity
 import org.protonaosp.columbus.getSensitivity
 import org.protonaosp.columbus.setAction
 import org.protonaosp.columbus.settings.launch.LaunchSettingsFragment
@@ -52,10 +49,6 @@ class SettingsFragment :
     private var prefs: SharedPreferences? = null
     private val _context by lazy { requireContext() }
 
-    private val vibrator by lazy {
-        (_context.getSystemService(Context.VIBRATOR_MANAGER_SERVICE) as? VibratorManager)
-            ?.defaultVibrator
-    }
     private var launcherApps: LauncherApps? = null
 
     private var actionCategory: PreferenceCategory? = null
@@ -64,14 +57,10 @@ class SettingsFragment :
     private val keyEnabled by lazy { _context.getString(R.string.pref_key_enabled) }
     private val keyAction by lazy { _context.getString(R.string.pref_key_action) }
     private val keySensitivity by lazy { _context.getString(R.string.pref_key_sensitivity) }
-    private val keyHapticIntensity by lazy {
-        _context.getString(R.string.pref_key_haptic_intensity)
-    }
 
     // Prefs
     private val prefEnabled by lazy { findPreference<MainSwitchPreference>(keyEnabled) }
     private val prefSensitivity by lazy { findPreference<SliderPreference>(keySensitivity) }
-    private val prefHapticIntensity by lazy { findPreference<SliderPreference>(keyHapticIntensity) }
     private val actionPreferences: MutableMap<String, RadioButtonPreference> =
         mutableMapOf<String, RadioButtonPreference>()
 
@@ -99,7 +88,6 @@ class SettingsFragment :
 
         updateEnabled()
         updateSensitivity(true)
-        updateHapticIntensity(true)
     }
 
     override fun onResume() {
@@ -120,7 +108,6 @@ class SettingsFragment :
             }
             keyAction -> updateActionState()
             keySensitivity -> updateSensitivity()
-            keyHapticIntensity -> updateHapticIntensity()
         }
     }
 
@@ -307,56 +294,5 @@ class SettingsFragment :
             }
             value = prefs.getSensitivity(_context)
         }
-    }
-
-    private fun updateHapticIntensity(initialize: Boolean = false) {
-        val prefs = prefs ?: return
-        prefHapticIntensity?.apply {
-            if (initialize) {
-                sliderIncrement = 1
-                setTickVisible(true)
-                setUpdatesContinuously(true)
-            }
-            value = prefs.getHapticIntensity(_context)
-            if (!initialize) {
-                val vibDoubleTap =
-                    when (value) {
-                        0 -> EFFECT_TICK
-                        1 -> EFFECT_DOUBLE_CLICK
-                        2 -> EFFECT_HEAVY_CLICK
-                        else -> EFFECT_HEAVY_CLICK
-                    }
-                vibrator?.vibrate(vibDoubleTap, sonicAudioAttr)
-            }
-        }
-    }
-
-    companion object {
-        // Vibration effects from HapticFeedbackConstants
-        // Duplicated because we can't use performHapticFeedback in a background service
-        private val sonicAudioAttr: AudioAttributes =
-            AudioAttributes.Builder()
-                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
-                .setUsage(AudioAttributes.USAGE_ALARM)
-                .build()
-
-        private val EFFECT_TICK =
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
-                VibrationEffect.createPredefined(VibrationEffect.EFFECT_TICK)
-            } else {
-                VibrationEffect.createOneShot(25, VibrationEffect.DEFAULT_AMPLITUDE)
-            }
-        private val EFFECT_DOUBLE_CLICK =
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
-                VibrationEffect.createPredefined(VibrationEffect.EFFECT_DOUBLE_CLICK)
-            } else {
-                VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE)
-            }
-        private val EFFECT_HEAVY_CLICK =
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
-                VibrationEffect.createPredefined(VibrationEffect.EFFECT_HEAVY_CLICK)
-            } else {
-                VibrationEffect.createOneShot(75, VibrationEffect.DEFAULT_AMPLITUDE)
-            }
     }
 }
