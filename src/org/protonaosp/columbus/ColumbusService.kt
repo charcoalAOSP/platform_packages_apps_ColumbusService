@@ -157,12 +157,11 @@ class ColumbusService : Service(), SharedPreferences.OnSharedPreferenceChangeLis
 
     private fun updateSensitivity() {
         val prefs = prefs ?: return
-        val value = prefs.getSensitivity(this)
         sensitivity =
-            if (value <= 5) {
-                value.toFloat() / 100f
+            if (prefs.getLowSensitivity(this)) {
+                resources.getInteger(R.integer.low_sensitivity_percent) * 0.01f
             } else {
-                (value - 5).toFloat() * 0.15f
+                resources.getInteger(R.integer.default_sensitivity_percent) * 0.01f
             }
         dlog(TAG, "Setting sensitivity to $sensitivity")
     }
@@ -196,7 +195,7 @@ class ColumbusService : Service(), SharedPreferences.OnSharedPreferenceChangeLis
         if (key == null) return
         when (key) {
             getString(R.string.pref_key_enabled) -> updateEnabled()
-            getString(R.string.pref_key_sensitivity) -> updateSensitivity()
+            getString(R.string.pref_key_low_sensitivity) -> updateSensitivity()
             getString(R.string.pref_key_action) -> updateAction()
         }
     }

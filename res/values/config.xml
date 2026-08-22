@@ -6,7 +6,9 @@
 -->
 <resources>
     <bool name="default_enabled" translatable="false">false</bool>
-    <integer name="default_sensitivity" translatable="false">2</integer>
+    <integer name="default_sensitivity_percent" translatable="false">77</integer>
+    <integer name="low_sensitivity_percent" translatable="false">0</integer>
+    <bool name="default_low_sensitivity" translatable="false">false</bool>
     <string name="default_action" translatable="false">screenshot</string>
 
     <!-- Set default TensorFlow Lite model for back tap detection depends on your device's size.

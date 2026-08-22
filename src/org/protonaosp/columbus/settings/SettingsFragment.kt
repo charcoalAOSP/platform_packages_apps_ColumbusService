@@ -20,9 +20,9 @@ import android.util.DisplayMetrics
 import android.view.View
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.PreferenceCategory
+import androidx.preference.SwitchPreferenceCompat
 import com.android.settingslib.widget.MainSwitchPreference
 import com.android.settingslib.widget.SelectorWithWidgetPreference
-import com.android.settingslib.widget.SliderPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -34,7 +34,7 @@ import org.protonaosp.columbus.dlog
 import org.protonaosp.columbus.getAction
 import org.protonaosp.columbus.getDePrefs
 import org.protonaosp.columbus.getEnabled
-import org.protonaosp.columbus.getSensitivity
+import org.protonaosp.columbus.getLowSensitivity
 import org.protonaosp.columbus.setAction
 import org.protonaosp.columbus.settings.launch.LaunchSettingsFragment
 import org.protonaosp.columbus.utils.AppIconCacheManager
@@ -56,11 +56,15 @@ class SettingsFragment :
     // Keys
     private val keyEnabled by lazy { _context.getString(R.string.pref_key_enabled) }
     private val keyAction by lazy { _context.getString(R.string.pref_key_action) }
-    private val keySensitivity by lazy { _context.getString(R.string.pref_key_sensitivity) }
+    private val keyLowSensitivity by lazy {
+        _context.getString(R.string.pref_key_low_sensitivity)
+    }
 
     // Prefs
     private val prefEnabled by lazy { findPreference<MainSwitchPreference>(keyEnabled) }
-    private val prefSensitivity by lazy { findPreference<SliderPreference>(keySensitivity) }
+    private val prefLowSensitivity by lazy {
+        findPreference<SwitchPreferenceCompat>(keyLowSensitivity)
+    }
     private val actionPreferences: MutableMap<String, RadioButtonPreference> =
         mutableMapOf<String, RadioButtonPreference>()
 
@@ -87,7 +91,7 @@ class SettingsFragment :
         lifecycleScope.launch { populateRadioPreferences() }
 
         updateEnabled()
-        updateSensitivity(true)
+        updateLowSensitivity()
     }
 
     override fun onResume() {
@@ -107,7 +111,7 @@ class SettingsFragment :
                 updateActionState()
             }
             keyAction -> updateActionState()
-            keySensitivity -> updateSensitivity()
+            keyLowSensitivity -> updateLowSensitivity()
         }
     }
 
@@ -283,16 +287,8 @@ class SettingsFragment :
         }
     }
 
-    private fun updateSensitivity(initialize: Boolean = false) {
+    private fun updateLowSensitivity() {
         val prefs = prefs ?: return
-        prefSensitivity?.apply {
-            if (initialize) {
-                setHapticFeedbackMode(SliderPreference.HAPTIC_FEEDBACK_MODE_ON_TICKS)
-                sliderIncrement = 1
-                setTickVisible(true)
-                setUpdatesContinuously(true)
-            }
-            value = prefs.getSensitivity(_context)
-        }
+        prefLowSensitivity?.setChecked(prefs.getLowSensitivity(_context))
     }
 }

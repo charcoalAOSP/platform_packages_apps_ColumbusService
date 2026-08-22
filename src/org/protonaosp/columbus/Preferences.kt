@@ -90,10 +90,23 @@ fun SharedPreferences.getAction(context: Context): String {
     ) ?: context.getString(R.string.default_action)
 }
 
-fun SharedPreferences.getSensitivity(context: Context): Int {
-    return getInt(
-        context.getString(R.string.pref_key_sensitivity),
-        context.resources.getInteger(R.integer.default_sensitivity),
+fun SharedPreferences.setLowSensitivity(context: Context, lowSensitivity: Boolean) {
+    val key = context.getString(R.string.pref_key_low_sensitivity)
+    edit().putBoolean(key, lowSensitivity).commit()
+
+    // Compat for 3rd party apps
+    Settings.Secure.putIntForUser(
+        context.contentResolver,
+        key,
+        if (lowSensitivity) 1 else 0,
+        ActivityManager.getCurrentUser(),
+    )
+}
+
+fun SharedPreferences.getLowSensitivity(context: Context): Boolean {
+    return getBoolean(
+        context.getString(R.string.pref_key_low_sensitivity),
+        context.resources.getBoolean(R.bool.default_low_sensitivity),
     )
 }
 
