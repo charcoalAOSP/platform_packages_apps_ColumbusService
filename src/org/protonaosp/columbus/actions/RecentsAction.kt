@@ -15,8 +15,6 @@ class RecentsAction(context: Context) : Action(context) {
 
     override fun canRun() = isDeviceInteractiveAndUnlocked(context)
 
-    override fun canRunWhenScreenOff() = false
-
     override fun run() {
         service.toggleRecentApps()
     }

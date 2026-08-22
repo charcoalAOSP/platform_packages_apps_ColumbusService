@@ -20,8 +20,6 @@ class ScreenshotAction(context: Context) : Action(context) {
 
     override fun canRun() = pm?.isInteractive == true
 
-    override fun canRunWhenScreenOff() = false
-
     override fun run() {
         helper.takeScreenshot(WindowManager.ScreenshotSource.SCREENSHOT_OTHER, handler, null)
     }

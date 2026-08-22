@@ -14,8 +14,6 @@
     <string name="pref_key_action" translatable="false">columbus_action</string>
     <string name="pref_key_launch_app" translatable="false">columbus_launch_app</string>
     <string name="pref_key_launch_app_shortcut" translatable="false">columbus_launch_app_shortcut</string>
-    <string name="pref_key_allow_screen_off" translatable="false">allow_screen_off</string>
-    <string name="pref_key_allow_screen_off_action_forced" translatable="false">allow_screen_off_action_forced</string>
     <string name="pref_key_haptic_intensity" translatable="false">haptic_intensity</string>
     <string name="pref_key_launch_app_summary" translatable="false">launch_app_summary</string>
     <string name="pref_key_launch_shortcut_app_summary" translatable="false">launch_shortcut_app_summary</string>
@@ -52,9 +50,6 @@
     <string name="setting_haptic_intensity_title">Haptic feedback intensity</string>
     <string name="setting_haptic_intensity_light">Light</string>
     <string name="setting_haptic_intensity_strong">Strong</string>
-    <string name="setting_screen_off_title">Allow when screen is off</string>
-    <string name="setting_screen_off_summary">May increase false triggers</string>
-    <string name="setting_screen_off_blocked_summary">Blocked by current action</string>
     <string name="setting_action_title" product="default">Tap back of phone twice to</string>
     <string name="setting_action_title" product="device">Tap back of device twice to</string>
     <string name="setting_action_title" product="tablet">Tap back of tablet twice to</string>

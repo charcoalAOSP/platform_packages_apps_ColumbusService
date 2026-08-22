@@ -37,8 +37,6 @@ class LaunchAction(context: Context) :
 
     override fun canRun() = isShortcutValid && isDeviceInteractiveAndUnlocked(context)
 
-    override fun canRunWhenScreenOff() = false
-
     private val launcherApps: LauncherApps?
     private val shortcutService: IShortcutService?
     private val prefs: SharedPreferences

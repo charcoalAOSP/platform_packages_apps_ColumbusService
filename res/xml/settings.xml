@@ -51,13 +51,6 @@
             android:selectable="true"
             android:defaultValue="@integer/default_haptic_intensity"
             android:dependency="@string/pref_key_enabled" />
-
-        <SwitchPreferenceCompat
-            android:key="@string/pref_key_allow_screen_off"
-            android:title="@string/setting_screen_off_title"
-            android:summary="@string/setting_screen_off_summary"
-            android:defaultValue="@bool/default_allow_screen_off"
-            android:dependency="@string/pref_key_enabled" />
     </PreferenceCategory>
 
 </PreferenceScreen>

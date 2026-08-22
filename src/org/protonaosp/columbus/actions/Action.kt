@@ -11,8 +11,6 @@ import android.content.Context
 abstract class Action(val context: Context) {
     open fun canRun() = true
 
-    open fun canRunWhenScreenOff() = true
-
     abstract fun run()
 
     open fun destroy() {}

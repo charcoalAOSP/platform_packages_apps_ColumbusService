@@ -90,13 +90,6 @@ fun SharedPreferences.getAction(context: Context): String {
     ) ?: context.getString(R.string.default_action)
 }
 
-fun SharedPreferences.getAllowScreenOff(context: Context): Boolean {
-    return getBoolean(
-        context.getString(R.string.pref_key_allow_screen_off),
-        context.resources.getBoolean(R.bool.default_allow_screen_off),
-    )
-}
-
 fun SharedPreferences.getSensitivity(context: Context): Int {
     return getInt(
         context.getString(R.string.pref_key_sensitivity),

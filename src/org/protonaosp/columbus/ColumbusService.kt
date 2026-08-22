@@ -43,9 +43,6 @@ class ColumbusService : Service(), SharedPreferences.OnSharedPreferenceChangeLis
     private var gates = setOf<Gate>()
     private val binder = Binder()
 
-    // State
-    private var screenCallbackRegistered = false
-
     // Settings
     private var enabled = true
     private var sensitivity = 0.03f
@@ -101,7 +98,15 @@ class ColumbusService : Service(), SharedPreferences.OnSharedPreferenceChangeLis
         updateAction()
         updateSensitivity()
         updateEnabled()
-        updateScreenCallback()
+
+        // Disable gesture entirely while the screen is off to save power
+        val filter =
+            IntentFilter().apply {
+                addAction(Intent.ACTION_SCREEN_ON)
+                addAction(Intent.ACTION_SCREEN_OFF)
+            }
+        dlog(TAG, "Listening to screen on/off events")
+        registerReceiver(screenCallback, filter)
 
         PackageStateManager.onCreate(this)
 
@@ -115,11 +120,7 @@ class ColumbusService : Service(), SharedPreferences.OnSharedPreferenceChangeLis
 
         PackageStateManager.onDestroy()
 
-        // Only unregister if we previously registered
-        if (screenCallbackRegistered) {
-            unregisterReceiver(screenCallback)
-            screenCallbackRegistered = false
-        }
+        unregisterReceiver(screenCallback)
 
         // Cleanup gates
         deactivateGates()
@@ -173,16 +174,6 @@ class ColumbusService : Service(), SharedPreferences.OnSharedPreferenceChangeLis
         dlog(TAG, "Setting action to $key")
         action?.destroy()
         action = createAction(key)
-
-        val action = action ?: return
-        // For settings
-        prefs
-            .edit()
-            .putBoolean(
-                getString(R.string.pref_key_allow_screen_off_action_forced),
-                !action.canRunWhenScreenOff(),
-            )
-            .apply()
     }
 
     private fun updateEnabled() {
@@ -199,28 +190,6 @@ class ColumbusService : Service(), SharedPreferences.OnSharedPreferenceChangeLis
             dlog(TAG, "Disabling gesture")
             deactivateGates()
             disableGesture()
-        }
-    }
-
-    private fun updateScreenCallback() {
-        val allowScreenOff = prefs?.getAllowScreenOff(this) ?: return
-
-        // Listen if either condition *can't* run when screen is off
-        if (
-            (!allowScreenOff || action?.canRunWhenScreenOff() == false) && !screenCallbackRegistered
-        ) {
-            val filter =
-                IntentFilter().apply {
-                    addAction(Intent.ACTION_SCREEN_ON)
-                    addAction(Intent.ACTION_SCREEN_OFF)
-                }
-            dlog(TAG, "Listening to screen on/off events")
-            registerReceiver(screenCallback, filter)
-            screenCallbackRegistered = true
-        } else if (screenCallbackRegistered) {
-            dlog(TAG, "Stopped listening to screen on/off events")
-            unregisterReceiver(screenCallback)
-            screenCallbackRegistered = false
         }
     }
 
@@ -241,13 +210,8 @@ class ColumbusService : Service(), SharedPreferences.OnSharedPreferenceChangeLis
         when (key) {
             getString(R.string.pref_key_enabled) -> updateEnabled()
             getString(R.string.pref_key_sensitivity) -> updateSensitivity()
-            // Action might change screen callback behavior
-            getString(R.string.pref_key_action) -> {
-                updateAction()
-                updateScreenCallback()
-            }
+            getString(R.string.pref_key_action) -> updateAction()
             getString(R.string.pref_key_haptic_intensity) -> updateHapticIntensity()
-            getString(R.string.pref_key_allow_screen_off) -> updateScreenCallback()
         }
     }
 
