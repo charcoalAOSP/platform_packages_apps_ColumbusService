@@ -123,6 +123,7 @@ class ColumbusService : Service(), SharedPreferences.OnSharedPreferenceChangeLis
 
         // Cleanup gates
         deactivateGates()
+        settingsGate?.release()
         gates = emptySet()
 
         // Stop sensor and controller
@@ -218,7 +219,8 @@ class ColumbusService : Service(), SharedPreferences.OnSharedPreferenceChangeLis
         wakelock?.acquire(2000L)
         try {
             val settingsGate = settingsGate
-            if (settingsGate != null && settingsGate.isBlocking() && settingsGate.handleGesture()) {
+            if (settingsGate != null && settingsGate.isBlocking()) {
+                settingsGate.handleGesture()
                 vibrator?.vibrate(vibDoubleTap, sonicAudioAttr)
                 return
             }

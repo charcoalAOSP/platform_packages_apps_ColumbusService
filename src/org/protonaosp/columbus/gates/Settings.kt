@@ -39,7 +39,9 @@ class Settings(context: Context, handler: Handler) : Gate(context, handler, 2) {
             override fun onActivityStopped(activity: Activity) {
                 if (activity is SettingsActivity) {
                     settingsActivityCount--
-                    clearSettingsActivityContext()
+                    if (settingsActivityContext?.get() === activity) {
+                        clearSettingsActivityContext()
+                    }
                     updateBlocking()
                 }
             }
@@ -48,34 +50,49 @@ class Settings(context: Context, handler: Handler) : Gate(context, handler, 2) {
 
             override fun onActivityDestroyed(activity: Activity) {
                 if (activity is SettingsActivity) {
-                    clearSettingsActivityContext()
+                    if (settingsActivityContext?.get() === activity) {
+                        clearSettingsActivityContext()
+                    }
                 }
             }
         }
+
+    init {
+        // Track activities for the whole lifetime of the gate so start/stop
+        // events are not missed while the gate is temporarily deactivated,
+        // e.g. by the screen turning off.
+        (context.applicationContext as Application).registerActivityLifecycleCallbacks(
+            activityLifecycleCallbacks
+        )
+    }
 
     private fun updateBlocking() {
         setBlocking(settingsActivityCount > 0)
     }
 
     override fun onActivate() {
-        (context.applicationContext as Application).registerActivityLifecycleCallbacks(
-            activityLifecycleCallbacks
-        )
         updateBlocking()
     }
 
     override fun onDeactivate() {
+        lastToast?.cancel()
+        lastToast = null
+        setBlocking(false)
+    }
+
+    fun release() {
         (context.applicationContext as Application).unregisterActivityLifecycleCallbacks(
             activityLifecycleCallbacks
         )
-        setBlocking(false)
+        lastToast?.cancel()
+        lastToast = null
     }
 
     private fun showToast(context: Context) {
         lastToast?.cancel()
         val toast =
             Toast.makeText(
-                context,
+                context.applicationContext,
                 org.protonaosp.columbus.R.string.gesture_detected,
                 Toast.LENGTH_SHORT,
             )
@@ -89,12 +106,7 @@ class Settings(context: Context, handler: Handler) : Gate(context, handler, 2) {
         lastToast = null
     }
 
-    fun handleGesture(): Boolean {
-        val context = settingsActivityContext?.get()
-        if (context != null) {
-            showToast(context)
-            return true
-        }
-        return false
+    fun handleGesture() {
+        settingsActivityContext?.get()?.let { showToast(it) }
     }
 }
