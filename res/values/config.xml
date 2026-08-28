@@ -22,7 +22,7 @@
          If false, ColumbusService try to use CHRESensor that using ContextHub and fallback to APSensor
          if "android.hardware.context_hub" system feature is not found.
     -->
-    <bool name="default_use_apsensor" translatable="false">true</bool>
+    <bool name="default_use_apsensor" translatable="false">false</bool>
 
     <!-- Use heuristic mode on APSensor, which only uses Accelerometer sensor and partial use of Gyroscope sensor
          without TensorFlow Lite for detection.
