@@ -23,7 +23,7 @@ class CHRESensor(val context: Context, var sensitivity: Float, val handler: Hand
     ColumbusSensor() {
     private var contextHubManager: ContextHubManager? = null
     private var callback: CHRECallback? = null
-    private var isListening: Boolean = false
+    @Volatile private var isListening: Boolean = false
 
     init {
         contextHubManager =
@@ -61,27 +61,40 @@ class CHRESensor(val context: Context, var sensitivity: Float, val handler: Hand
         }
 
         fun setListening(listening: Boolean) {
-            if (listening) {
-                val contextHubManager = contextHubManager ?: return
-                val callback = callback ?: return
-                client = contextHubManager.createClient(contextHubManager.contextHubs[0], callback)
+            synchronized(this@CHRESensor) {
+                if (listening) {
+                    val contextHubManager = contextHubManager ?: return
+                    val callback = callback ?: return
+                    if (client == null) {
+                        val hubs = contextHubManager.contextHubs
+                        if (hubs.isNullOrEmpty()) {
+                            dlog(TAG, "No context hubs found")
+                            return
+                        }
+                        client = contextHubManager.createClient(hubs[0], callback)
+                    }
 
-                val msg = ContextHubMessages.RecognizerStart()
-                // Only report events to AP if gesture is halfway done
-                msg.sensitivity = sensitivity
+                    val msg = ContextHubMessages.RecognizerStart()
+                    // Only report events to AP if gesture is halfway done
+                    msg.sensitivity = sensitivity
 
-                sendNanoappMsg(ContextHubMessages.RECOGNIZER_START, MessageNano.toByteArray(msg))
-                setListening(true)
-            } else {
-                sendNanoappMsg(ContextHubMessages.RECOGNIZER_STOP, ByteArray(0))
-                setListening(false)
+                    sendNanoappMsg(ContextHubMessages.RECOGNIZER_START, MessageNano.toByteArray(msg))
+                    this@CHRESensor.isListening = true
+                } else {
+                    sendNanoappMsg(ContextHubMessages.RECOGNIZER_STOP, ByteArray(0))
+                    client?.close()
+                    client = null
+                    this@CHRESensor.isListening = false
+                }
             }
         }
 
         fun updateSensitivity() {
-            val msg = ContextHubMessages.SensitivityUpdate()
-            msg.sensitivity = sensitivity
-            sendNanoappMsg(ContextHubMessages.SENSITIVITY_UPDATE, MessageNano.toByteArray(msg))
+            synchronized(this@CHRESensor) {
+                val msg = ContextHubMessages.SensitivityUpdate()
+                msg.sensitivity = sensitivity
+                sendNanoappMsg(ContextHubMessages.SENSITIVITY_UPDATE, MessageNano.toByteArray(msg))
+            }
         }
 
         private fun sendNanoappMsg(msgType: Int, bytes: ByteArray) {
@@ -103,10 +116,6 @@ class CHRESensor(val context: Context, var sensitivity: Float, val handler: Hand
 
     override fun isListening(): Boolean {
         return isListening
-    }
-
-    fun setListening(listening: Boolean) {
-        isListening = listening
     }
 
     override fun startListening() {
